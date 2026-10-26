@@ -1176,27 +1176,6 @@
   confirmed_by: INSPIRE
 - title: The POLARBEAR Experiment
   authors:
-  - name: H. Nishino
-    me: false
-  - name: P. Ade
-    me: false
-  - name: A. Anthony
-    me: false
-  - name: et al.
-    me: false
-  - name: incl. A. Ghribi
-    me: true
-  venue: ''
-  year: 2012
-  category: collaboration
-  collaboration: null
-  doi: null
-  arxiv: null
-  inspire: https://inspirehep.net/literature/1598933
-  url: null
-  confirmed_by: INSPIRE
-- title: The POLARBEAR Experiment
-  authors:
   - name: Z. Kermish
     me: false
   - name: P. Ade

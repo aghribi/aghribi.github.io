@@ -234,8 +234,12 @@ def publications():
                         "confirmed_by": x["url"]})
 
     excluded = set(CONFIG["publications_exclude"])
+    with_doi = {norm_title(r["title"]) for r in records if r.get("doi")}
     out = []
     for r in records:
+        if not r.get("doi") and norm_title(r["title"]) in with_doi:
+            continue  # same paper also recorded with a DOI
+
         if r.get("doi") in excluded or r.get("inspire") in excluded:
             continue
         cat = "collaboration" if r["author_count"] > CONFIG["collaboration_min_authors"] else r["type"]
