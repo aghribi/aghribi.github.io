@@ -47,7 +47,7 @@
   pypi: 0.6.0
   updated: '2026-10-26'
 - name: ag-platform
-  description: Hosted API and dashboard for the ag-tools packages
+  description: API server and dashboard for the ag-tools packages (code only, no public deployment)
   url: https://github.com/aghribi/ag-platform
   homepage: null
   language: Python
