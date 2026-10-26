@@ -1,0 +1,96 @@
+- name: ag-benchmarks
+  description: Public benchmarks for ag-pii-vault, ag-guardrail, ag-docparse and ag-evalforge
+  url: https://github.com/aghribi/ag-benchmarks
+  homepage: null
+  language: Python
+  group: libraries
+  pypi: null
+  updated: '2026-10-26'
+- name: ag-docparse
+  description: LLM-based structured extraction from documents
+  url: https://github.com/aghribi/ag-docparse
+  homepage: null
+  language: Python
+  group: libraries
+  pypi: 0.6.0
+  updated: '2026-10-26'
+- name: ag-evalforge
+  description: Evaluation runner for LLM applications
+  url: https://github.com/aghribi/ag-evalforge
+  homepage: null
+  language: Python
+  group: libraries
+  pypi: 0.6.0
+  updated: '2026-10-26'
+- name: ag-guardrail
+  description: Runtime safety checks for LLM applications
+  url: https://github.com/aghribi/ag-guardrail
+  homepage: null
+  language: Python
+  group: libraries
+  pypi: 0.6.0
+  updated: '2026-10-26'
+- name: ag-notebooks
+  description: Notebooks for the ag-tools packages
+  url: https://github.com/aghribi/ag-notebooks
+  homepage: null
+  language: Jupyter Notebook
+  group: libraries
+  pypi: null
+  updated: '2026-10-26'
+- name: ag-pii-vault
+  description: PII tokenization for LLM pipelines
+  url: https://github.com/aghribi/ag-pii-vault
+  homepage: null
+  language: Python
+  group: libraries
+  pypi: 0.6.0
+  updated: '2026-10-26'
+- name: ag-platform
+  description: Hosted API and dashboard for the ag-tools packages
+  url: https://github.com/aghribi/ag-platform
+  homepage: null
+  language: Python
+  group: libraries
+  pypi: null
+  updated: '2026-10-26'
+- name: ag-tools
+  description: Site for the ag-* open-source libraries
+  url: https://github.com/aghribi/ag-tools
+  homepage: https://aghribi.github.io/ag-tools/
+  language: HTML
+  group: libraries
+  pypi: null
+  updated: '2026-10-26'
+- name: LLRF_SP2_pipeline
+  description: 'SPIRAL2 LLRF fault diagnosis pipeline: ML pipeline for detecting, classifying, and explaining faults in superconducting RF cavity control at GANIL'
+  url: https://github.com/aghribi/LLRF_SP2_pipeline
+  homepage: null
+  language: Jupyter Notebook
+  group: research
+  pypi: null
+  updated: '2026-09-25'
+- name: acc-ml-living-review
+  description: ML/AI particle accelerators living review
+  url: https://github.com/aghribi/acc-ml-living-review
+  homepage: null
+  language: HTML
+  group: research
+  pypi: null
+  updated: '2026-10-26'
+- name: artifact-hackathon-2026
+  description: AISSAI Accelerator Hackathon 2026 — GANIL, Les Domaines de Gaston, Oct 11-16 2026
+  url: https://github.com/aghribi/artifact-hackathon-2026
+  homepage: null
+  language: HTML
+  group: research
+  pypi: null
+  updated: '2026-10-21'
+- name: cas2026-ai-medical-accelerators
+  description: 'Lecture: AI Applications for Medical Accelerators (Accelerator Side) — CAS Topical Course, Jurmala 2026'
+  url: https://github.com/aghribi/cas2026-ai-medical-accelerators
+  homepage: null
+  language: HTML
+  group: research
+  pypi: null
+  updated: '2026-06-24'

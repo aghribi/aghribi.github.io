@@ -1,0 +1,5 @@
+```{=html}
+<ul class="entries">
+<% for (const it of items) { %><li><span class="t"><a href="<%= it.url %>"><%= it.title %></a></span><br><span class="m"><%= it.event %><% if (it.location) { %>, <%= it.location %><% } %>, <%= it.date %></span></li>
+<% } %></ul>
+```

@@ -1,0 +1,5 @@
+```{=html}
+<ul class="entries">
+<% for (const it of items) { %><li><span class="t"><%= it.title %></span><br><span class="m"><% it.authors.forEach((a, i) => { %><%= i ? ", " : "" %><% if (a.me) { %><strong><%= a.name %></strong><% } else { %><%= a.name %><% } %><% }) %><% if (it.collaboration) { %> (<%= it.collaboration %>)<% } %><%= !it.collaboration && /\.$/.test(it.authors.at(-1)?.name || "") ? "" : "." %> <em><%= it.venue %></em><% if (it.year) { %>, <%= it.year %><% } %>.</span><br><span class="links"><% if (it.doi) { %><a href="https://doi.org/<%= it.doi %>">DOI</a><% } %><% if (it.arxiv) { %><a href="https://arxiv.org/abs/<%= it.arxiv %>">arXiv</a><% } %><% if (it.inspire) { %><a href="<%= it.inspire %>">INSPIRE</a><% } %><% if (it.url) { %><a href="<%= it.url %>">Record</a><% } %></span></li>
+<% } %></ul>
+```

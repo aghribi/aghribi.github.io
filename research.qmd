@@ -1,0 +1,35 @@
+---
+title: "Research"
+---
+
+## Current roles
+
+- Since 2024: in charge of artificial intelligence developments for the GANIL accelerator division.
+- Since 2023: in charge of collective effects studies for the [FCC-ee](https://home.cern/science/accelerators/future-circular-collider) high energy booster.
+- Since 2022: scientific coordinator of M4CAST, the French network on AI for accelerators.
+- Scientific coordinator of InM4CAST (ANR MRSEI/AMORCE) and MLAcc (CNRS master project on AI for accelerators).
+- [ARTIFACT](https://artifact-network.org) network.
+
+## Positions
+
+| Period | Institution | Position |
+|---|---|---|
+| 2014 to now | GANIL, CNRS, Caen | Research engineer, accelerator physics |
+| since 2024 | CERN, BE-ABP-LAF | Visiting scientist |
+| since 2023 | CEA/IRFU/LEDA | Collaborator |
+| 2012 to 2014 | APC, CNRS, Paris | Researcher |
+| 2010 to 2012 | UC Berkeley, Physics department | Visiting scholar |
+| 2009 to 2010 | APC, CNRS, Paris | Research engineer |
+
+## Past responsibilities at GANIL
+
+- 2017 to 2021: cryogenic commissioning of the SPIRAL2 linac.
+- 2016 to 2018: SPIRAL2 linac cryoplant.
+- 2015 to 2017: cryogenics at GANIL.
+- 2014 to 2023: R&D for cryogenics.
+
+## Education
+
+- 2021: Habilitation (HDR), Université de Caen Normandie.
+- 2009: PhD in astronomy and astrophysics, Université Paris 7 Denis Diderot ([theses.fr](https://theses.fr/2009PA077221)).
+- 2006: Master in space sciences, Université Paul Sabatier, Toulouse.

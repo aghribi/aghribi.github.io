@@ -1,0 +1,17 @@
+---
+title: "Adnan Ghribi"
+subtitle: "Accelerator physicist, GANIL (CNRS), Caen"
+---
+
+Research engineer at CNRS, based at GANIL since 2014.
+Works on artificial intelligence for particle accelerators and on collective effects in the FCC-ee high energy booster.
+Visiting scientist at CERN (BE-ABP-LAF) since 2024.
+
+Earlier work in experimental cosmology: superconducting millimetre-wave components, bolometric interferometry (QUBIC) and the POLARBEAR experiment, at APC Paris and UC Berkeley.
+Then cryogenics for the SPIRAL2 superconducting linac at GANIL.
+
+## Profiles
+
+- ORCID: [0000-0001-9634-4526](https://orcid.org/0000-0001-9634-4526)
+- INSPIRE: [A.Ghribi.1](https://inspirehep.net/authors/1245936)
+- GitHub: [aghribi](https://github.com/aghribi)

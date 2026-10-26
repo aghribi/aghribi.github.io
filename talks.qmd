@@ -1,0 +1,12 @@
+---
+title: "Talks"
+listing:
+  id: talks
+  contents: data/talks.yml
+  template: _templates/talks.ejs
+---
+
+Talks with a public record.
+
+::: {#talks}
+:::

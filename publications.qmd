@@ -1,0 +1,44 @@
+---
+title: "Publications"
+listing:
+  - id: journal
+    contents: data/publications.yml
+    include: {category: journal}
+    template: _templates/publications.ejs
+  - id: conference
+    contents: data/publications.yml
+    include: {category: conference}
+    template: _templates/publications.ejs
+  - id: books
+    contents: data/publications.yml
+    include: {category: "{book,thesis,dataset,preprint,report,other}"}
+    template: _templates/publications.ejs
+  - id: collaboration
+    contents: data/publications.yml
+    include: {category: collaboration}
+    template: _templates/publications.ejs
+---
+
+Full records: [INSPIRE](https://inspirehep.net/authors/1245936), [ORCID](https://orcid.org/0000-0001-9634-4526).
+
+## Journal articles
+
+::: {#journal}
+:::
+
+## Conference papers
+
+::: {#conference}
+:::
+
+## Theses, books, preprints and data
+
+::: {#books}
+:::
+
+## Collaboration papers
+
+Papers with more than 30 authors.
+
+::: {#collaboration}
+:::

@@ -1,0 +1,17 @@
+---
+title: "Software"
+listing:
+  - id: libraries
+    contents: data/software.yml
+    include: {group: libraries}
+    template: _templates/software.ejs
+---
+
+## ag-* libraries
+
+Open-source Python libraries for LLM pipelines. Documentation: [aghribi.github.io/ag-tools](https://aghribi.github.io/ag-tools/).
+
+::: {#libraries}
+:::
+
+Research code is listed under [Side projects](side-projects.qmd).

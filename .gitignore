@@ -1,0 +1,7 @@
+_site/
+.quarto/
+/.luarc.json
+.DS_Store
+data/*_review.yml
+
+/.quarto/

@@ -1,0 +1,38 @@
+---
+title: "Teaching and supervision"
+---
+
+## Lectures and schools
+
+- 2026: [AI applications for medical accelerators, accelerator side](https://indico.cern.ch/event/1587419/contributions/6995110/). CERN Accelerator School, topical course on medical accelerators, Jurmala. Material: [cas2026-ai-medical-accelerators](https://github.com/aghribi/cas2026-ai-medical-accelerators).
+- 2026: [AISSAI Accelerator Hackathon](https://github.com/aghribi/artifact-hackathon-2026), GANIL, 11 to 16 October 2026.
+- Graduate and undergraduate teaching at UC Berkeley and Université Paris 7.
+
+## PhD students
+
+| Student | Thesis | Role | Status |
+|---|---|---|---|
+| Dora Gibellieri | [Coupling impedance and collective effects in the Future Circular Collider](https://theses.fr/s393128) | Director | In progress |
+| Charly Lassalle | [IA pour la cryogénie et la radiofréquence des accélérateurs supraconducteurs](https://theses.fr/2026NORMC213) | Director | Defended 2026 |
+| Adrien Vassal | [Étude d'un réseau cryogénique multi-clients pour SPIRAL2](https://theses.fr/2019NORMC223) | Co-supervisor | Defended 2019 |
+
+## Postdoc
+
+- Keon Hee Kim.
+
+## Apprentice
+
+- Yoann Baumont.
+
+## Interns
+
+| Year | Interns |
+|---|---|
+| 2026 | Alexandre Dalibard-Brun, Santiago Martinez |
+| 2025 | Imane Sellami, Sabah Ghribi, Salah Eddine Feddaoui Dellalou |
+| 2023 | Astrel Télémaque |
+| 2022 | Amin Asri, Antoine Corbel, Mereke Tontayeva, Mohamed Fahmaoui |
+| 2021 | Abdallah Alhaffar, Jérémy Ceszkowski |
+| 2020 | Clarisse Poupon-Pourchot |
+| 2016 | Yoann Bert, Anne-Solenne Leynac |
+| 2014 | Reda Mekkaoui |

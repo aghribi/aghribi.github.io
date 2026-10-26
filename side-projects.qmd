@@ -1,0 +1,28 @@
+---
+title: "Side projects"
+listing:
+  - id: research
+    contents: data/software.yml
+    include: {group: research}
+    template: _templates/software.ejs
+---
+
+## Scientific
+
+::: {#research}
+:::
+
+## Live
+
+- [Agora-Conf](https://agora.artifact-network.org). Conference companion built on Indico: programme, slide annotation. Used at the AISSAI Accelerator Hackathon 2026.
+- [arXiv Enhancer](https://addons.mozilla.org/en-US/firefox/addon/arxiv-enhancer/). Browser extension for arXiv, Firefox and Chrome.
+- [ag-* libraries](software.qmd). Open-source Python libraries for LLM pipelines, on PyPI.
+
+## Closed
+
+| Project | What it was | Period |
+|---|---|---|
+| GrantYou | Alerts on EU and national funding calls for researchers | May to October 2026 |
+| Mawlaia platform | Hosted API and dashboard for the ag-* libraries. Code: [ag-platform](https://github.com/aghribi/ag-platform) | August to October 2026 |
+| Agora-Marketplace | Marketplace between conference organisers and companies. Never opened to the public | May to October 2026 |
+| Mermaid Diagrams for Google Docs and Confluence | Editor add-ons rendering Mermaid diagrams. Built, not released | August 2026 |
