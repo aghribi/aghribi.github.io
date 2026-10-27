@@ -5,9 +5,13 @@ listing:
   - id: stats
     contents: data/stats.yml
     template: _templates/stats.ejs
-  - id: featured
+  - id: lead
     contents: data/projects.yml
-    include: {featured: true}
+    include: {featured: lead}
+    template: _templates/projects.ejs
+  - id: work
+    contents: data/projects.yml
+    include: {featured: work}
     template: _templates/projects.ejs
   - id: latest-pubs
     contents: data/publications.yml
@@ -24,9 +28,9 @@ listing:
 <section class="hero">
   <p class="kicker">Accelerator physics · Machine learning</p>
   <h1>Adnan Ghribi</h1>
-  <p class="role">Accelerator physicist at GANIL (CNRS), visiting scientist at CERN</p>
-  <p class="bio">I connect models, data and experiments to build explainable, predictive and open science, where artificial intelligence extends physics instead of replacing it.
-  From experimental cosmology to particle accelerators: collective effects in the FCC-ee booster, machine learning for superconducting linacs, and the networks that bring the community together.</p>
+  <p class="role">Accelerator physicist, GANIL (CNRS) · Visiting scientist, CERN</p>
+  <p class="bio">I work on the physics of particle accelerators and on the AI that helps design and run them.
+  I lead collective-effects studies for the FCC-ee high energy booster, build machine-learning tools for superconducting linacs, and coordinate the TwinRISE project and the ARTIFACT network.</p>
   <div class="cta">
     <a class="btn-pill primary" href="projects.html">Projects</a>
     <a class="btn-pill" href="publications.html">Publications</a>
@@ -40,16 +44,26 @@ listing:
 ::: {#stats}
 :::
 
-<p class="kicker" style="margin-top:3rem">Trajectory</p>
+<p class="kicker" style="margin-top:3rem">Coordination</p>
 
-## From modelling the real world to integrated scientific intelligence
+## Projects and networks I lead
+
+::: {#lead}
+:::
+
+### ARTIFACT strategy
+
+Seven axes, each feeding European projects.
 
 ```{=html}
-<div class="path">
-  <div class="step" style="--c:#1f3a5f"><span class="when">2006 to 2015</span><h3>Experimental cosmology</h3><p class="where">QUBIC · POLARBEAR · LiteBIRD</p><p>Design, integration and deployment of instruments for CMB polarisation, from the lab to the Atacama desert.</p></div>
-  <div class="step" style="--c:#f26b38"><span class="when">2015 to 2020</span><h3>Multiphysics modelling</h3><p class="where">SPIRAL2 · GRAAL</p><p>Thermal, mechanical and fluid models of the SPIRAL2 superconducting linac, confronted with operation data. Scientific lead of GRAAL.</p></div>
-  <div class="step" style="--c:#13a3a3"><span class="when">2020 to now</span><h3>Future particle accelerators</h3><p class="where">FCC-ee</p><p>Collective effects in the FCC-ee high energy booster with CEA/LEDA and CERN, on Jean Zay, Adastra, CC-IN2P3, LXPLUS and CRIANN.</p></div>
-  <div class="step" style="--c:#43a547"><span class="when">2020 to now</span><h3>Scientific AI and intelligent infrastructures</h3><p class="where">M4CAST · MLAcc · ARTIFACT</p><p>Hybrid models, virtual observers and anomaly detection. National and European networks for data, simulation and AI.</p></div>
+<div class="axes">
+  <span class="axis" style="--c:#e09a1a">Frugal and efficient modelling</span>
+  <span class="axis" style="--c:#8a8a8a">FAIR, AI-ready accelerator data store</span>
+  <span class="axis" style="--c:#3aa0dc">AI-driven operation</span>
+  <span class="axis" style="--c:#14a07a">Sustainable operation and design</span>
+  <span class="axis" style="--c:#d8c21a">Training and knowledge transfer</span>
+  <span class="axis" style="--c:#1f6fb0">AI policy for accelerators</span>
+  <span class="axis" style="--c:#d2601a">AI science network</span>
 </div>
 ```
 
@@ -57,7 +71,7 @@ listing:
 
 ## Projects
 
-::: {#featured}
+::: {#work}
 :::
 
 [All projects →](projects.qmd){.more}

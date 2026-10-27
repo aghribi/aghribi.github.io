@@ -1,4 +1,28 @@
-# Project cards. Hand-written; every link must resolve. featured: shown on the home page.
+# Project cards. Hand-written; every link must resolve.
+# featured: lead = home page coordination row, work = home page selected projects.
+- title: TwinRISE
+  role: Coordinator
+  summary: European reference framework for trusted AI-generated digital twins across research, healthcare and energy infrastructures. Distributed, AI-native digital twin engine.
+  categories: [Coordination]
+  status: Signed
+  period: 2027 to 2030
+  tags: [Horizon Europe, digital twins, trusted AI]
+  featured: lead
+  links:
+    - {label: CORDIS, url: "https://cordis.europa.eu/project/id/101287548"}
+
+- title: iRIS, work package GreenBeam
+  role: Work package leader
+  summary: AI methods to cut the energy and resource use of particle accelerators. Surrogate models from operational beam data, embedded in design and optimisation tools, and audits of hidden energy losses. With CERN, GSI, Heriot-Watt and Liverpool.
+  categories: [Coordination]
+  status: Signed
+  period: 2026 to 2030
+  tags: [Horizon Europe, sustainability, FCC]
+  featured: lead
+  links:
+    - {label: CORDIS, url: "https://cordis.europa.eu/project/id/101275935"}
+    - {label: Kick-off at FCC Week 2026, url: "https://indico.cern.ch/event/1552126/contributions/7119541/"}
+
 - title: FCC-ee high energy booster
   role: In charge of collective effects
   summary: Collective effects in the 100 km booster ring of the Future Circular Collider. Impedance model, intrabeam scattering, single- and multi-bunch instabilities, RF budget. Xsuite and PyHEADTAIL on HPC.
@@ -6,10 +30,11 @@
   status: Ongoing
   period: 2023 to now
   tags: [beam dynamics, impedance, CERN]
-  featured: true
+  featured: work
   links:
     - {label: FCC Week 2025 talk, url: "https://indico.cern.ch/event/1408515/contributions/6515048/"}
     - {label: IPAC 2026 paper, url: "https://inspirehep.net/literature/3162565"}
+    - {label: Wiki, url: "https://gitlab.cern.ch/groups/fcc-ee_collective_effects/heb/-/wikis/home"}
     - {label: GitLab, url: "https://gitlab.cern.ch/fcc-ee_collective_effects"}
     - {label: xsuite_heb, url: "https://gitlab.cern.ch/fcc-ee_collective_effects/heb/single_bunch_instabilities/xsuite_heb"}
     - {label: pyhdt_heb, url: "https://gitlab.cern.ch/fcc-ee_collective_effects/heb/single_bunch_instabilities/pyhdt_heb"}
@@ -23,7 +48,7 @@
   status: Released
   period: 2025 to 2026
   tags: [anomaly detection, explainability, Python]
-  featured: true
+  featured: work
   links:
     - {label: Site, url: "https://aghribi.github.io/LLRF_SP2_pipeline/"}
     - {label: Code, url: "https://github.com/aghribi/LLRF_SP2_pipeline"}
@@ -35,7 +60,7 @@
   status: Live
   period: 2025 to now
   tags: [literature review, automation, Hugo]
-  featured: true
+  featured: work
   links:
     - {label: Site, url: "https://aghribi.github.io/acc-ml-living-review/"}
     - {label: Code, url: "https://github.com/aghribi/acc-ml-living-review"}
@@ -48,7 +73,7 @@
   status: Released
   period: 2026
   tags: [Python, LLM, PyPI]
-  featured: true
+  featured: work
   links:
     - {label: Site, url: "https://aghribi.github.io/ag-tools/"}
     - {label: ag-pii-vault, url: "https://github.com/aghribi/ag-pii-vault"}
@@ -63,27 +88,28 @@
   status: Live
   period: 2026
   tags: [web app, Indico, ORCID login]
-  featured: true
+  featured: work
   links:
     - {label: App, url: "https://agora.artifact-network.org"}
 
 - title: ARTIFACT network
   role: Co-creator and coordinator
-  summary: European network on data, simulation and AI for accelerator technologies. More than forty partners from infrastructures, institutes, universities and companies, supported by TIARA and NuPECC.
+  summary: European network for AI in accelerator technologies, 41 partner institutions in 14 countries, supported by TIARA and NuPECC. Its strategy turns seven axes into funded projects, TwinRISE and iRIS first.
   image: assets/projects/artifact.jpg
-  categories: [Community]
+  categories: [Coordination]
   status: Ongoing
   period: 2023 to now
   tags: [AI for accelerators, FAIR data, Europe]
-  featured: true
+  featured: lead
   links:
     - {label: Site, url: "https://artifact-network.org"}
     - {label: TIARA 2024 talk, url: "https://indico.cern.ch/event/1385973/contributions/5826338/"}
 
-- title: M4CAST and MLAcc
+- title: ARTIFACT-France and MLAcc
   role: Coordinator
-  summary: French network on AI for particle accelerators, grown from the GRAAL collaboration, and the CNRS master project MLAcc. Monthly seminars and yearly workshops across most French accelerator labs.
-  categories: [Community]
+  summary: French branch of ARTIFACT (formerly M4CAST), grown from the GRAAL collaboration, and the CNRS master project MLAcc. Monthly seminars and yearly workshops across most French accelerator labs.
+  categories: [Coordination]
+  featured: lead
   status: Ongoing
   period: 2022 to now
   tags: [AI for accelerators, France, IN2P3]
@@ -101,7 +127,7 @@
 
 - title: AISSAI Accelerator Hackathon 2026
   summary: One-week hackathon on AI for accelerators at GANIL, 11 to 16 October 2026.
-  categories: [Teaching, Community]
+  categories: [Teaching]
   status: Delivered
   period: October 2026
   tags: [hackathon, GANIL]

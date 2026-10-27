@@ -5,9 +5,9 @@ title: "Research"
 ## Current roles
 
 - Coordinator of [TwinRISE](https://cordis.europa.eu/project/id/101287548), Horizon Europe project on trusted AI-generated digital twins for research infrastructures (2027 to 2030).
-- Co-creator and coordinator of the [ARTIFACT](https://artifact-network.org) network, more than forty European partners.
-- Work-package lead in iRIS.
-- Coordinator of M4CAST, the French network on AI for accelerators (since 2022), and of the CNRS master project MLAcc.
+- Co-creator and coordinator of the [ARTIFACT](https://artifact-network.org) network, 41 partner institutions in 14 countries.
+- Leader of work package 2, GreenBeam, in [iRIS](https://cordis.europa.eu/project/id/101275935), Horizon Europe project on sustainable research infrastructures (2026 to 2030).
+- Coordinator of ARTIFACT-France, the French network on AI for accelerators (formerly M4CAST, since 2022), and of the CNRS master project MLAcc.
 - In charge of AI developments for the GANIL accelerator division (since 2024).
 - In charge of collective effects for the [FCC-ee](https://home.cern/science/accelerators/future-circular-collider) high energy booster (since 2023).
 - Expert for the European Commission, MSCA Postdoctoral Fellowships physics panel. Reviewer and guest editor (Physical Review, Springer Nature, Frontiers in Physics).
