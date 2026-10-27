@@ -25,11 +25,6 @@ h2 { border-bottom: none !important; margin-top: 3rem; }
 .btn-pill.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 .btn-pill.primary:hover { color: #fff; opacity: .9; }
 
-/* stats */
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1rem; margin: 1rem 0 0; }
-.stat { border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.2rem; background: var(--soft); }
-.stat b { display: block; font-size: 2rem; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; }
-.stat span { color: var(--muted); font-size: .88rem; }
 
 /* expertise */
 .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.2rem; }

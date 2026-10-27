@@ -2,9 +2,6 @@
 pagetitle: "Adnan Ghribi"
 page-layout: full
 listing:
-  - id: stats
-    contents: data/stats.yml
-    template: _templates/stats.ejs
   - id: lead
     contents: data/projects.yml
     include: {featured: lead}
@@ -40,9 +37,6 @@ listing:
   </div>
 </section>
 ```
-
-::: {#stats}
-:::
 
 <p class="kicker" style="margin-top:3rem">Coordination</p>
 

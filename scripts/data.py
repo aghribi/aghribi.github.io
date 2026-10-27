@@ -326,7 +326,7 @@ def software():
     dump("software.yml", out)
 
 
-# ---------------------------------------------------------------- projects and stats
+# ---------------------------------------------------------------- projects
 
 def projects():
     """Hand-written cards: fail if any link is dead."""
@@ -339,20 +339,8 @@ def projects():
     print("projects.yml: all links resolve")
 
 
-def stats():
-    load = lambda n: yaml.safe_load((DATA / n).read_text())
-    pubs = load("publications.yml")
-    dump("stats.yml", [{
-        "publications": len(pubs),
-        "first_author": sum(1 for p in pubs if p["authors"] and p["authors"][0]["me"]),
-        "talks": len(load("talks.yml")),
-        "repos": len(load("software.yml")),
-        "since": min(p["year"] for p in pubs if p["year"]),
-    }])
-
 
 if __name__ == "__main__":
-    jobs = {"publications": publications, "talks": talks, "software": software, "projects": projects,
-            "stats": stats}
+    jobs = {"publications": publications, "talks": talks, "software": software, "projects": projects}
     for name in (jobs if sys.argv[1:] in ([], ["all"]) else sys.argv[1:]):
         jobs[name]()
