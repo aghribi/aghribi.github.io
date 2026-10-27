@@ -1,2 +1,6 @@
 # Talks not on CERN Indico. Each needs a public URL (event page or slides); it must resolve.
-[]
+- date: 2026-10-12
+  title: AI for particle accelerators introductory lecture
+  event: AISSAI'26 Hackathon on AI for Particle Accelerators
+  location: Les Domaines de Gaston, Normandy
+  url: https://indico.in2p3.fr/event/39704/contributions/178821/

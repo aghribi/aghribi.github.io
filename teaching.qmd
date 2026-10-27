@@ -5,7 +5,7 @@ title: "Teaching and supervision"
 ## Lectures and schools
 
 - 2026: [AI applications for medical accelerators, accelerator side](https://indico.cern.ch/event/1587419/contributions/6995110/). CERN Accelerator School, topical course on medical accelerators, Jurmala. Material: [cas2026-ai-medical-accelerators](https://github.com/aghribi/cas2026-ai-medical-accelerators).
-- 2026: [AISSAI Accelerator Hackathon](https://github.com/aghribi/artifact-hackathon-2026), GANIL, 11 to 16 October 2026.
+- 2026: [AISSAI'26 Hackathon on AI for Particle Accelerators](https://artifact-network.org/news/2026-10-22-aissai26-hackathon-report/), Normandy, 11 to 16 October 2026. Organiser, mentor and [introductory lecture](https://indico.in2p3.fr/event/39704/contributions/178821/) on AI for particle accelerators.
 - Graduate and undergraduate teaching at UC Berkeley and Université Paris 7.
 
 ## PhD students

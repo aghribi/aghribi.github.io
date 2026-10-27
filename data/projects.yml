@@ -126,12 +126,16 @@
     - {label: Indico, url: "https://indico.cern.ch/event/1587419/contributions/6995110/"}
 
 - title: AISSAI Accelerator Hackathon 2026
-  summary: One-week hackathon on AI for accelerators at GANIL, 11 to 16 October 2026.
+  role: Organiser, mentor and lecturer
+  summary: One-week hackathon on AI for particle accelerators in Normandy, 11 to 16 October 2026. 29 participants, three challenges on cases from ESS, STFC, CERN and PALLAS.
   categories: [Teaching]
   status: Delivered
   period: October 2026
-  tags: [hackathon, GANIL]
+  tags: [hackathon, AISSAI, ARTIFACT]
+  featured: work
   links:
+    - {label: Report, url: "https://artifact-network.org/news/2026-10-22-aissai26-hackathon-report/"}
+    - {label: Indico, url: "https://indico.in2p3.fr/event/39704/"}
     - {label: Code, url: "https://github.com/aghribi/artifact-hackathon-2026"}
     - {label: Pages, url: "https://aghribi.github.io/artifact-hackathon-2026/"}
 
