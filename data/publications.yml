@@ -1,3 +1,83 @@
+- title: '5 years of SPIRAL2 LINAC operation: cryogenic and superconducting RF aspects'
+  authors:
+  - name: Muhammad Aburas
+    me: false
+  - name: Pierre-Emmanuel Bernaudin
+    me: false
+  - name: Marco Di Giacomo
+    me: false
+  - name: Adnan Ghribi
+    me: true
+  - name: Charly Lassalle
+    me: false
+  venue: JACoW SRF2025, MOB06
+  year: 2026
+  category: conference
+  collaboration: null
+  doi: 10.18429/jacow-srf2025-mob06
+  arxiv: null
+  inspire: null
+  url: null
+  confirmed_by: DataCite
+- title: Development of fault identification pipeline for SPIRAL2 LLRF data
+  authors:
+  - name: Charly Lassalle
+    me: false
+  - name: Marco Di Giacomo
+    me: false
+  - name: Adnan Ghribi
+    me: true
+  - name: Patrick Bonnay
+    me: false
+  - name: Frédéric Bouly
+    me: false
+  venue: JACoW SRF2025, TUP68
+  year: 2026
+  category: conference
+  collaboration: null
+  doi: 10.18429/jacow-srf2025-tup68
+  arxiv: '2510.13421'
+  inspire: https://inspirehep.net/literature/3070080
+  url: null
+  confirmed_by: DataCite
+- title: 'Editorial: Artificial Intelligence for Particle Accelerators'
+  authors:
+  - name: Adnan Ghribi
+    me: true
+  - name: Carsten Welsch
+    me: false
+  - name: Thomas Shea
+    me: false
+  venue: EPJ Research Infrastructures 10, 16
+  year: 2026
+  category: journal
+  collaboration: null
+  doi: 10.1007/s41781-026-00170-x
+  arxiv: null
+  inspire: null
+  url: null
+  confirmed_by: Crossref
+- title: 'SPIRAL2 LLRF Fault Diagnosis: Structured Results Data (V7)'
+  authors:
+  - name: Adnan Ghribi
+    me: true
+  - name: Charly Lassalle
+    me: false
+  - name: Alexandre Dalibard Brund
+    me: false
+  - name: Marco Di Giacomo
+    me: false
+  - name: Frédéric Bouly
+    me: false
+  venue: Zenodo
+  year: 2026
+  category: dataset
+  collaboration: null
+  doi: 10.5281/zenodo.22729652
+  arxiv: null
+  inspire: null
+  url: null
+  confirmed_by: DataCite
 - title: Updates on Impedance Studies for the FCC-ee High Energy Booster
   authors:
   - name: Keon Hee Kim
@@ -66,27 +146,6 @@
   doi: 10.1103/82xr-d9gc
   arxiv: '2502.01196'
   inspire: https://inspirehep.net/literature/2874841
-  url: null
-  confirmed_by: INSPIRE
-- title: Development of fault identification pipeline for SPIRAL2 LLRF data
-  authors:
-  - name: Charly Lassalle
-    me: false
-  - name: Patrick Bonnay
-    me: false
-  - name: Frédéric Bouly
-    me: false
-  - name: Marco Di Giacomo
-    me: false
-  - name: Adnan Ghribi
-    me: true
-  venue: arXiv:2510.13421
-  year: 2025
-  category: conference
-  collaboration: null
-  doi: null
-  arxiv: '2510.13421'
-  inspire: https://inspirehep.net/literature/3070080
   url: null
   confirmed_by: INSPIRE
 - title: Emittance tuning of the FCC-ee High Energy Booster ring
@@ -329,25 +388,6 @@
   inspire: https://inspirehep.net/literature/2758542
   url: null
   confirmed_by: INSPIRE
-- title: Definition of tolerances and corrector strengths for the orbit control of the High-Energy Booster ring of the future electro-positron collider
-  authors:
-  - name: Barbara Dalena
-    me: false
-  - name: Tatiana Da Silva
-    me: false
-  - name: Antoine Chance
-    me: false
-  - name: Adnan Ghribi
-    me: true
-  venue: arXiv:2303.17996
-  year: 2023
-  category: preprint
-  collaboration: null
-  doi: null
-  arxiv: '2303.17996'
-  inspire: https://inspirehep.net/literature/2647823
-  url: null
-  confirmed_by: INSPIRE
 - title: 'Design of ASTERICS: A Superconducting 28 GHz ECR Ion Source Magnet for GANIL'
   authors:
   - name: D. Simon
@@ -369,6 +409,25 @@
   inspire: null
   url: null
   confirmed_by: Crossref
+- title: Method for determining a quality factor of an accelerating cavity of a particle accelerator
+  authors:
+  - name: A. Vassal
+    me: false
+  - name: F. Bonnay
+    me: false
+  - name: F. Bonne
+    me: false
+  - name: A. Ghribi
+    me: true
+  venue: Patent US11606857B2 (also FR3087896B1, EP3644692A1)
+  year: 2023
+  category: patent
+  collaboration: null
+  doi: null
+  arxiv: null
+  inspire: null
+  url: https://patents.google.com/patent/US11606857B2/en
+  confirmed_by: https://patents.google.com/patent/US11606857B2/en
 - title: Status and plans for the high energy booster of the future electron-positron collider FCC-ee
   authors:
   - name: Antoine Chance
@@ -388,6 +447,32 @@
   inspire: https://inspirehep.net/literature/2717666
   url: null
   confirmed_by: INSPIRE
+- title: Technologies de détection supraconductrices pour la cosmologie expérimentale
+  authors:
+  - name: Adnan Ghribi
+    me: true
+  venue: ISTE Group
+  year: 2023
+  category: book
+  collaboration: null
+  doi: 10.51926/iste.9781915874139
+  arxiv: null
+  inspire: null
+  url: null
+  confirmed_by: Crossref
+- title: Une aventure dans la recherche des ondes gravitationnelles primordiales
+  authors:
+  - name: Adnan Ghribi
+    me: true
+  venue: ISTE Group
+  year: 2023
+  category: book
+  collaboration: null
+  doi: 10.51926/iste.9781915874122
+  arxiv: null
+  inspire: null
+  url: null
+  confirmed_by: Crossref
 - title: Advanced Cryogenic Process Control and Monitoring for the SPIRAL2 Superconducting LINAC
   authors:
   - name: Adnan Ghribi
@@ -575,7 +660,7 @@
     me: false
   - name: Adrien Vassal
     me: false
-  venue: ''
+  venue: JACoW IPAC2019, TUPMP006
   year: 2019
   category: conference
   collaboration: null
@@ -607,6 +692,19 @@
   inspire: null
   url: null
   confirmed_by: Crossref
+- title: A brief report on the first cooldown of SPIRAL2
+  authors:
+  - name: A. Ghribi
+    me: true
+  venue: Cold Facts, Cryogenic Society of America
+  year: 2018
+  category: other
+  collaboration: null
+  doi: null
+  arxiv: null
+  inspire: null
+  url: https://cold-facts.org/2018/05/02/a_brief_report_on_the_first_cooldown_of_spiral2/
+  confirmed_by: https://cold-facts.org/2018/05/02/a_brief_report_on_the_first_cooldown_of_spiral2/
 - title: 'Next generation sub-millimetre wave focal plane array coupling concepts: an ESA TRP project to develop multichroic focal plane pixels for future CMB polarisation experiments'
   authors:
   - name: N. Trappe
@@ -642,7 +740,7 @@
     me: true
   - name: Francois Millet
     me: false
-  venue: ''
+  venue: JACoW LINAC2018, TUPO019
   year: 2018
   category: conference
   collaboration: null
@@ -663,34 +761,13 @@
     me: false
   - name: incl. A. Ghribi
     me: true
-  venue: ''
+  venue: JACoW IPAC2017, WEOAA1
   year: 2017
   category: conference
   collaboration: null
   doi: 10.18429/jacow-ipac2017-weoaa1
   arxiv: null
   inspire: https://inspirehep.net/literature/1627060
-  url: null
-  confirmed_by: INSPIRE
-- title: QUBIC - the Q&U Bolometric Interferometer for Cosmology
-  authors:
-  - name: Aniello Mennella
-    me: false
-  - name: P.A.R. Ade
-    me: false
-  - name: J. Aumont
-    me: false
-  - name: et al.
-    me: false
-  - name: incl. A. Ghribi
-    me: true
-  venue: PoS EPS-HEP2017, 044
-  year: 2017
-  category: collaboration
-  collaboration: null
-  doi: 10.22323/1.314.0044
-  arxiv: '1801.03730'
-  inspire: https://inspirehep.net/literature/1647616
   url: null
   confirmed_by: INSPIRE
 - title: Spiral 2 Cryogenic System for The Superconducting LINAC
@@ -1170,7 +1247,7 @@
   category: collaboration
   collaboration: null
   doi: 10.1007/s10909-012-0522-x
-  arxiv: null
+  arxiv: '1010.0645'
   inspire: https://inspirehep.net/literature/1605025
   url: null
   confirmed_by: INSPIRE
@@ -1269,27 +1346,6 @@
   inspire: https://inspirehep.net/literature/1337912
   url: null
   confirmed_by: INSPIRE
-- title: 'QUBIC: The QU Bolometric Interferometer for Cosmology'
-  authors:
-  - name: E. Battistelli
-    me: false
-  - name: A. Bau
-    me: false
-  - name: D. Bennett
-    me: false
-  - name: et al.
-    me: false
-  - name: incl. A. Ghribi
-    me: true
-  venue: Astropart.Phys. 34, 705
-  year: 2011
-  category: collaboration
-  collaboration: QUBIC
-  doi: 10.1016/j.astropartphys.2011.01.012
-  arxiv: '1010.0645'
-  inspire: https://inspirehep.net/literature/871676
-  url: null
-  confirmed_by: INSPIRE
 - title: The POLARBEAR CMB polarization experiment
   authors:
   - name: K. Arnold
@@ -1311,6 +1367,27 @@
   inspire: https://inspirehep.net/literature/1629801
   url: null
   confirmed_by: INSPIRE
+- title: 'The new generation CMB B-mode polarization experiment: POLARBEAR'
+  authors:
+  - name: The Polarbear Collaboration
+    me: false
+  - name: J. Errard
+    me: false
+  - name: P. A. R. Ade
+    me: false
+  - name: et al.
+    me: false
+  - name: incl. A. Ghribi
+    me: true
+  venue: arXiv:1011.0763
+  year: 2010
+  category: collaboration
+  collaboration: null
+  doi: 10.48550/arxiv.1011.0763
+  arxiv: '1011.0763'
+  inspire: null
+  url: null
+  confirmed_by: DataCite
 - title: A demonstrator for bolometric interferometry
   authors:
   - name: Adnan Ghribi
@@ -1351,6 +1428,27 @@
   inspire: https://inspirehep.net/literature/787147
   url: null
   confirmed_by: INSPIRE
+- title: 'BRAIN/MBI: a bolometric interferometer dedicated to the CMB polarization'
+  authors:
+  - name: A. Tartari
+    me: false
+  - name: J. G. Bartlett
+    me: false
+  - name: E. S. Battistelli
+    me: false
+  - name: et al.
+    me: false
+  - name: incl. A. Ghribi
+    me: true
+  venue: 5th ESA Workshop on Millimetre Wave Technology and Applications, ESTEC
+  year: 2009
+  category: collaboration
+  collaboration: null
+  doi: null
+  arxiv: null
+  inspire: null
+  url: https://mural.maynoothuniversity.ie/id/eprint/2506/2/AT_BRAIN.pdf
+  confirmed_by: https://mural.maynoothuniversity.ie/id/eprint/2506/2/AT_BRAIN.pdf
 - title: Composants millimétriques supraconducteurs pour la mesure de la polarisation du fond diffus cosmologique et application à l'interférométrie bolométrique
   authors:
   - name: A. Ghribi

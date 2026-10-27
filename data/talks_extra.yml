@@ -4,3 +4,43 @@
   event: AISSAI'26 Hackathon on AI for Particle Accelerators
   location: Les Domaines de Gaston, Normandy
   url: https://indico.in2p3.fr/event/39704/contributions/178821/
+- date: 2021-01-19
+  title: In situ dynamic heat load measurements of the SPIRAL 2 LINAC superconducting cavities
+  event: TESLA Technology Collaboration meeting TTC 2021
+  location: Online
+  url: https://indico.desy.de/event/27572/contributions/94171/
+- date: 2022-05-12
+  title: Contexte GRAAL
+  event: GRAAL workshop
+  location: APC, Paris
+  url: https://indico.in2p3.fr/event/27137/contributions/109354/
+- date: 2022-09-26
+  title: "M4CAST: an emerging national collaborative effort for AI applications to accelerator physics and technologies"
+  event: IN2P3/IRFU Machine Learning workshop 2022
+  location: APC, Paris
+  url: https://indico.in2p3.fr/event/27507/contributions/114533/
+- date: 2023-04-11
+  title: "M4CAST: an emerging national collaborative effort for AI applications to accelerator physics and technologies"
+  event: Journée Modélisation LWFA du GdR APPEL
+  location: LPGP, Orsay
+  url: https://indico.ijclab.in2p3.fr/event/9271/contributions/29053/
+- date: 2023-11-27
+  title: General project presentation
+  event: ARTIFACT preparation workshop
+  location: FIAP, Paris
+  url: https://indico.in2p3.fr/event/31107/contributions/131165/
+- date: 2024-10-16
+  title: Le projet ARTIFACT
+  event: Atelier Calcul, GdR SCIPAC
+  location: IJCLab, Orsay
+  url: https://indico.in2p3.fr/event/32826/contributions/143978/
+- date: 2025-11-18
+  title: L'IA pour la conception et l'opération des accélérateurs de particules
+  event: 2ndes Journées Online
+  location: IJCLab, Orsay
+  url: https://indico.ijclab.in2p3.fr/event/11845/contributions/39682/
+- date: 2025-11-27
+  title: AI for the Design and Operation of Particle Accelerators
+  event: IN2P3/IRFU Machine Learning workshop 2025
+  location: LPC Caen and GANIL
+  url: https://indico.in2p3.fr/event/36597/contributions/163873/

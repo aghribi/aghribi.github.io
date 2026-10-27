@@ -10,4 +10,5 @@ bib_skip: [seminaire, conf, poster]   # talks and posters, not publications
 
 max_authors: 6
 collaboration_min_authors: 30          # above this, a paper is listed under collaboration papers
-publications_exclude: []               # DOI or INSPIRE URL
+publications_exclude:                  # DOI or INSPIRE URL
+  - https://inspirehep.net/literature/2647823   # arXiv twin of the IPAC 2023 tolerances paper, title typo defeats the merge

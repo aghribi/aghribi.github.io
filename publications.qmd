@@ -11,7 +11,7 @@ listing:
     template: _templates/publications.ejs
   - id: books
     contents: data/publications.yml
-    include: {category: "{book,thesis,dataset,preprint,report,other}"}
+    include: {category: "{book,thesis,patent,dataset,preprint,report,other}"}
     template: _templates/publications.ejs
   - id: collaboration
     contents: data/publications.yml
@@ -31,7 +31,7 @@ Full records: [INSPIRE](https://inspirehep.net/authors/1245936), [ORCID](https:/
 ::: {#conference}
 :::
 
-## Theses, books, preprints and data
+## Books, theses, patents, preprints and data
 
 ::: {#books}
 :::

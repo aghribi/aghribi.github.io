@@ -9,6 +9,7 @@ uv run scripts/data.py [publications|talks|projects|all]
 Nothing reaches the page unless a database confirms it. Unconfirmed items go
 to data/*_review.yml for a human to check.
 """
+import datetime
 import html
 import json
 import re
@@ -78,6 +79,12 @@ def norm_doi(doi):
     return f"10.48550/arxiv.{m.group(1)}" if m else doi or None
 
 
+def jacow_venue(doi):
+    """JACoW DOIs encode conference and paper id: 10.18429/jacow-ipac2019-tupmp006."""
+    m = re.match(r"10\.18429/jacow-([a-z]+\d{4})-(\w+)$", doi or "")
+    return f"JACoW {m.group(1).upper()}, {m.group(2).upper()}" if m else None
+
+
 def is_me(name):
     return CONFIG["surname"].lower() in name.lower()
 
@@ -110,6 +117,8 @@ INSPIRE_TYPES = {"article": "journal", "conference paper": "conference", "book":
 CROSSREF_TYPES = {"journal-article": "journal", "proceedings-article": "conference", "book": "book",
                   "book-chapter": "book", "monograph": "book", "edited-book": "book", "report": "report",
                   "posted-content": "preprint", "dissertation": "thesis"}
+DATACITE_TYPES = {"ConferencePaper": "conference", "JournalArticle": "journal", "Book": "book", "BookChapter": "book",
+                  "Dataset": "dataset", "Software": "software", "Preprint": "preprint", "Dissertation": "thesis"}
 BIB_TYPES = {"article": "journal", "inproceedings": "conference", "proceedings": "conference", "book": "book",
              "incollection": "book", "inbook": "book", "phdthesis": "thesis", "patent": "patent"}
 
@@ -130,14 +139,15 @@ def inspire_records():
         arxiv = (m.get("arxiv_eprints") or [{}])[0].get("value")
         doctype = (m.get("document_type") or ["article"])[0]
         year = pi.get("year") or m.get("earliest_date", "")[:4]
+        doi = norm_doi((m.get("dois") or [{}])[0].get("value"))
         out.append({
             "title": m["titles"][0]["title"],
             "author_names": [flip(a["full_name"]) for a in m.get("authors", [])],
             "author_count": m.get("author_count") or len(m.get("authors", [])),
             "collaboration": ", ".join(c["value"] for c in m.get("collaborations", [])),
-            "venue": venue or (f"arXiv:{arxiv}" if arxiv else ""),
+            "venue": venue or jacow_venue(doi) or (f"arXiv:{arxiv}" if arxiv else ""),
             "year": int(year) if year else None,
-            "doi": norm_doi((m.get("dois") or [{}])[0].get("value")),
+            "doi": doi,
             "arxiv": arxiv,
             "inspire": f"https://inspirehep.net/literature/{m['control_number']}",
             "type": "preprint" if doctype == "article" and not pi.get("journal_title") else INSPIRE_TYPES.get(doctype, "other"),
@@ -153,6 +163,17 @@ def orcid_dois():
         for e in g.get("external-ids", {}).get("external-id", []):
             if e["external-id-type"] == "doi":
                 dois.add(norm_doi(e["external-id-value"]))
+    return dois
+
+
+def openalex_dois():
+    """Catches DOIs missing from INSPIRE and ORCID (JACoW, Zenodo, books). Errata are skipped."""
+    dois, cursor = set(), "*"
+    while cursor:
+        d = get(f"https://api.openalex.org/works?filter=author.orcid:{CONFIG['orcid']}&per-page=200"
+                f"&select=doi,type&cursor={cursor}")
+        dois |= {norm_doi(w["doi"]) for w in d["results"] if w["doi"] and w["type"] not in ("erratum", "paratext")}
+        cursor = d["meta"].get("next_cursor") if d["results"] else None
     return dois
 
 
@@ -177,7 +198,7 @@ def crossref(doi):
     m = d["message"]
     names = [" ".join(x for x in (a.get("given"), a.get("family")) if x) or a.get("name", "") for a in m.get("author", [])]
     year = (m.get("issued", {}).get("date-parts") or [[None]])[0][0]
-    venue = (m.get("container-title") or [""])[0]
+    venue = (m.get("container-title") or [m.get("publisher", "")])[0]  # books have no container
     if m.get("volume"):
         venue += f" {m['volume']}"
     if m.get("page") or m.get("article-number"):
@@ -199,9 +220,9 @@ def datacite(doi):
     arxiv = doi.split("arxiv.")[1] if doi.startswith("10.48550/arxiv.") else None
     kind = a["types"].get("resourceTypeGeneral", "")
     return {"title": a["titles"][0]["title"], "author_names": names, "author_count": len(names),
-            "collaboration": "", "venue": f"arXiv:{arxiv}" if arxiv else a.get("publisher", ""),
+            "collaboration": "", "venue": f"arXiv:{arxiv}" if arxiv else jacow_venue(doi) or a.get("publisher", ""),
             "year": a.get("publicationYear"), "doi": doi, "arxiv": arxiv, "inspire": None,
-            "type": "preprint" if arxiv else {"Dataset": "dataset", "Software": "software"}.get(kind, "report"),
+            "type": "preprint" if arxiv else DATACITE_TYPES.get(kind, "report"),
             "confirmed_by": "DataCite"}
 
 
@@ -213,7 +234,7 @@ def publications():
     bib = bib_entries()
     review = []
 
-    candidates = orcid_dois() | {b["doi"] for b in bib if b["doi"]}
+    candidates = orcid_dois() | openalex_dois() | {b["doi"] for b in bib if b["doi"]}
     for doi in sorted(candidates - set(by_doi)):
         r = crossref(doi) or datacite(doi)
         if r is None:
@@ -245,12 +266,20 @@ def publications():
             review.append({"doi": r["doi"], "title": r["title"], "reason": "DOI not registered yet; listed without DOI link"})
             r["doi"] = None
 
+    # One entry per title (repository mirrors, preprints, DOI-less copies). Keep the published record.
+    rank = lambda r: (r["type"] == "preprint", not r.get("doi"),
+                      {"INSPIRE": 0, "Crossref": 1, "DataCite": 2}.get(r["confirmed_by"], 3))
+    best = {}
+    for r in sorted(records, key=rank):
+        twin = best.setdefault(norm_title(r["title"]), r)
+        if twin is not r:
+            twin["arxiv"] = twin.get("arxiv") or r.get("arxiv")
+            twin["inspire"] = twin.get("inspire") or r.get("inspire")
+    kept = best.values()
+
     excluded = set(CONFIG["publications_exclude"])
-    with_doi = {norm_title(r["title"]) for r in records if r.get("doi")}
     out = []
-    for r in records:
-        if not r.get("doi") and norm_title(r["title"]) in with_doi:
-            continue  # same paper also recorded with a DOI
+    for r in kept:
 
         if r.get("doi") in excluded or r.get("inspire") in excluded:
             continue
@@ -295,7 +324,8 @@ def talks():
             out.append({**x, "date": str(x["date"]), "confirmed_by": x["url"]})
         else:
             review.append({**x, "reason": "URL does not resolve"})
-    out.sort(key=lambda t: t["date"], reverse=True)
+    today = datetime.date.today().isoformat()
+    out = sorted((t for t in out if t["date"] <= today), key=lambda t: t["date"], reverse=True)  # upcoming talks wait
     dump("talks.yml", out)
 
     dated = {t["date"] for t in out}

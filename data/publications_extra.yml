@@ -4,3 +4,78 @@
   year: 2009
   type: thesis
   url: https://theses.fr/2009PA077221
+- title: 'BRAIN/MBI: a bolometric interferometer dedicated to the CMB polarization'
+  venue: 5th ESA Workshop on Millimetre Wave Technology and Applications, ESTEC
+  year: 2009
+  type: conference
+  url: https://mural.maynoothuniversity.ie/id/eprint/2506/2/AT_BRAIN.pdf
+  author_names:
+  - A. Tartari
+  - J. G. Bartlett
+  - E. S. Battistelli
+  - A. Baù
+  - David G. Bennett
+  - Laurent Bergé
+  - J.-P. Bernard
+  - Ayoub Bounab
+  - A. Bréelle
+  - R. Charlassier
+  - Angelo Cruciani
+  - Sophie Collin
+  - Gareth S. Curran
+  - P. de Bernardis
+  - L. Dumoulin
+  - Amanda C. Gault
+  - M. Gervasi
+  - A. Ghribi
+  - Martin Giard
+  - C. Giordano
+  - Yannick Giraud-Héraud
+  - Marcin L. Gradziel
+  - L. Guglielmi
+  - J.–Ch. Hamilton
+  - V. C. Haynes
+  - A. Iacoangeli
+  - J. Kaplan
+  - Andrei L. Korotkov
+  - J. Landé
+  - Bruno Maffei
+  - M. Maiello
+  - S. Malu
+  - S. Marnieros
+  - S. Masi
+  - J. Anthony Murphy
+  - Créidhe M. M. O'Sullivan
+  - François P. Pajot
+  - Andrea Passerini
+  - S. Peterzen
+  - F. Piacentini
+  - L. Piccirillo
+  - M. Piat
+  - G. Pisano
+  - Gianluca Polenta
+  - D. Prêle
+  - C. Rosset
+  - A. Schillaci
+  - Giorgia Sironi
+  - Sebastiano M. Spinelli
+  - Gregory S. Tucker
+  - P. Timbie
+  - Fabrice Voisin
+  - Robert A. Watson
+  - M. Zannoni
+- title: A brief report on the first cooldown of SPIRAL2
+  venue: Cold Facts, Cryogenic Society of America
+  year: 2018
+  type: other
+  url: https://cold-facts.org/2018/05/02/a_brief_report_on_the_first_cooldown_of_spiral2/
+- title: Method for determining a quality factor of an accelerating cavity of a particle accelerator
+  venue: Patent US11606857B2 (also FR3087896B1, EP3644692A1)
+  year: 2023
+  type: patent
+  url: https://patents.google.com/patent/US11606857B2/en
+  author_names:
+  - A. Vassal
+  - F. Bonnay
+  - F. Bonne
+  - A. Ghribi

@@ -1,9 +1,3 @@
-- date: '2026-11-04'
-  title: WP2 - GreenBeam
-  event: Start of the Action and Onboarding
-  location: CERN
-  url: https://indico.cern.ch/event/1716099/contributions/7219122/
-  confirmed_by: CERN Indico
 - date: '2026-10-12'
   title: AI for particle accelerators introductory lecture
   event: AISSAI'26 Hackathon on AI for Particle Accelerators
@@ -28,6 +22,18 @@
   location: University of Helsinki
   url: https://indico.cern.ch/event/1552126/contributions/7119541/
   confirmed_by: CERN Indico
+- date: '2025-11-27'
+  title: AI for the Design and Operation of Particle Accelerators
+  event: IN2P3/IRFU Machine Learning workshop 2025
+  location: LPC Caen and GANIL
+  url: https://indico.in2p3.fr/event/36597/contributions/163873/
+  confirmed_by: https://indico.in2p3.fr/event/36597/contributions/163873/
+- date: '2025-11-18'
+  title: L'IA pour la conception et l'opération des accélérateurs de particules
+  event: 2ndes Journées Online
+  location: IJCLab, Orsay
+  url: https://indico.ijclab.in2p3.fr/event/11845/contributions/39682/
+  confirmed_by: https://indico.ijclab.in2p3.fr/event/11845/contributions/39682/
 - date: '2025-05-21'
   title: Updates on FCC-ee High Energy Booster collective effects studies
   event: FCC Week 2025
@@ -40,6 +46,12 @@
   location: CERN
   url: https://indico.cern.ch/event/1469408/contributions/6186326/
   confirmed_by: CERN Indico
+- date: '2024-10-16'
+  title: Le projet ARTIFACT
+  event: Atelier Calcul, GdR SCIPAC
+  location: IJCLab, Orsay
+  url: https://indico.in2p3.fr/event/32826/contributions/143978/
+  confirmed_by: https://indico.in2p3.fr/event/32826/contributions/143978/
 - date: '2024-06-12'
   title: Collective effects in the high energy booster
   event: FCC Week 2024
@@ -70,6 +82,12 @@
   location: null
   url: https://indico.cern.ch/event/1375185/contributions/5786718/
   confirmed_by: CERN Indico
+- date: '2023-11-27'
+  title: General project presentation
+  event: ARTIFACT preparation workshop
+  location: FIAP, Paris
+  url: https://indico.in2p3.fr/event/31107/contributions/131165/
+  confirmed_by: https://indico.in2p3.fr/event/31107/contributions/131165/
 - date: '2023-11-23'
   title: 'Booster: beam injection parameters vs collective effects.'
   event: FCC-ee Injector Design (CHART proposal) Coordination meeting 15
@@ -106,9 +124,33 @@
   location: Uppsala University
   url: https://indico.cern.ch/event/1270982/contributions/5337513/
   confirmed_by: CERN Indico
+- date: '2023-04-11'
+  title: 'M4CAST: an emerging national collaborative effort for AI applications to accelerator physics and technologies'
+  event: Journée Modélisation LWFA du GdR APPEL
+  location: LPGP, Orsay
+  url: https://indico.ijclab.in2p3.fr/event/9271/contributions/29053/
+  confirmed_by: https://indico.ijclab.in2p3.fr/event/9271/contributions/29053/
+- date: '2022-09-26'
+  title: 'M4CAST: an emerging national collaborative effort for AI applications to accelerator physics and technologies'
+  event: IN2P3/IRFU Machine Learning workshop 2022
+  location: APC, Paris
+  url: https://indico.in2p3.fr/event/27507/contributions/114533/
+  confirmed_by: https://indico.in2p3.fr/event/27507/contributions/114533/
+- date: '2022-05-12'
+  title: Contexte GRAAL
+  event: GRAAL workshop
+  location: APC, Paris
+  url: https://indico.in2p3.fr/event/27137/contributions/109354/
+  confirmed_by: https://indico.in2p3.fr/event/27137/contributions/109354/
 - date: '2022-03-10'
   title: SPIRAL2 (SP2)
   event: The Scientific Program of ACP2021
   location: Virtual Event
   url: https://indico.cern.ch/event/1060503/contributions/4751965/
   confirmed_by: CERN Indico
+- date: '2021-01-19'
+  title: In situ dynamic heat load measurements of the SPIRAL 2 LINAC superconducting cavities
+  event: TESLA Technology Collaboration meeting TTC 2021
+  location: Online
+  url: https://indico.desy.de/event/27572/contributions/94171/
+  confirmed_by: https://indico.desy.de/event/27572/contributions/94171/
