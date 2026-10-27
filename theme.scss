@@ -75,3 +75,6 @@ h2 { border-bottom: none !important; margin-top: 3rem; }
 /* ARTIFACT strategy axes */
 .axes { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .6rem; }
 .axis { font-size: .85rem; font-weight: 500; padding: .35rem .8rem; border-radius: 8px; border-left: 4px solid var(--c); background: var(--soft); }
+
+#listing-lead .cards { grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); }
+#listing-lead .card-p .thumb { aspect-ratio: 16 / 7; }
