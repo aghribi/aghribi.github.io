@@ -45,7 +45,14 @@ def get(url, accept="application/json"):
         time.sleep(2 * (attempt + 1))
 
 
+def doi_registered(doi):
+    """doi.org handle API: responseCode 1 = registered. Publishers often block scripted page requests."""
+    return (get(f"https://doi.org/api/handles/{urllib.parse.quote(doi)}") or {}).get("responseCode") == 1
+
+
 def url_ok(url):
+    if url.startswith("https://doi.org/"):
+        return doi_registered(url.removeprefix("https://doi.org/"))
     req = urllib.request.Request(url, method="GET", headers={"User-Agent": "aghribi.github.io data build"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
@@ -233,6 +240,11 @@ def publications():
                         "author_count": len(x.get("author_names", [1])), "collaboration": "",
                         "confirmed_by": x["url"]})
 
+    for r in records:
+        if r.get("doi") and not doi_registered(r["doi"]):
+            review.append({"doi": r["doi"], "title": r["title"], "reason": "DOI not registered yet; listed without DOI link"})
+            r["doi"] = None
+
     excluded = set(CONFIG["publications_exclude"])
     with_doi = {norm_title(r["title"]) for r in records if r.get("doi")}
     out = []
@@ -314,7 +326,33 @@ def software():
     dump("software.yml", out)
 
 
+# ---------------------------------------------------------------- projects and stats
+
+def projects():
+    """Hand-written cards: fail if any link is dead."""
+    dead = [(p["title"], l["url"]) for p in yaml.safe_load((DATA / "projects.yml").read_text())
+            for l in p.get("links", []) if not url_ok(l["url"])]
+    for title, url in dead:
+        print(f"dead link: {title}: {url}")
+    if dead:
+        sys.exit(1)
+    print("projects.yml: all links resolve")
+
+
+def stats():
+    load = lambda n: yaml.safe_load((DATA / n).read_text())
+    pubs = load("publications.yml")
+    dump("stats.yml", [{
+        "publications": len(pubs),
+        "first_author": sum(1 for p in pubs if p["authors"] and p["authors"][0]["me"]),
+        "talks": len(load("talks.yml")),
+        "repos": len(load("software.yml")),
+        "since": min(p["year"] for p in pubs if p["year"]),
+    }])
+
+
 if __name__ == "__main__":
-    jobs = {"publications": publications, "talks": talks, "software": software}
+    jobs = {"publications": publications, "talks": talks, "software": software, "projects": projects,
+            "stats": stats}
     for name in (jobs if sys.argv[1:] in ([], ["all"]) else sys.argv[1:]):
         jobs[name]()

@@ -8,6 +8,8 @@ website:
   site-url: https://aghribi.github.io
   navbar:
     left:
+      - href: projects.qmd
+        text: Projects
       - href: research.qmd
         text: Research
       - href: publications.qmd
@@ -16,22 +18,21 @@ website:
         text: Talks
       - href: teaching.qmd
         text: Teaching
-      - href: software.qmd
-        text: Software
-      - href: side-projects.qmd
-        text: Side projects
     right:
       - icon: github
         href: https://github.com/aghribi
         aria-label: GitHub
+      - text: ORCID
+        href: https://orcid.org/0000-0001-9634-4526
+      - text: INSPIRE
+        href: https://inspirehep.net/authors/1245936
   page-footer:
-    center: "Lists built from INSPIRE, ORCID, Crossref, DataCite, CERN Indico, theses.fr and GitHub."
+    center: "© Adnan Ghribi. Lists built from INSPIRE, ORCID, Crossref, DataCite, CERN Indico, theses.fr and GitHub."
 
 format:
   html:
     theme:
-      light: cosmo
-      dark: darkly
-    css: styles.css
+      light: [cosmo, theme.scss]
+      dark: [darkly, theme.scss]
     toc: false
     anchor-sections: false

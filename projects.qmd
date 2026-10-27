@@ -1,0 +1,15 @@
+---
+title: "Projects"
+subtitle: "Research, open source, teaching and community work."
+page-layout: full
+listing:
+  - id: projects
+    contents: data/projects.yml
+    template: _templates/projects.ejs
+    categories: true
+---
+
+::: {#projects}
+:::
+
+All public code: [github.com/aghribi](https://github.com/aghribi).

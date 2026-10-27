@@ -1,5 +1,0 @@
-```{=html}
-<ul class="entries">
-<% for (const it of items) { %><li><span class="t"><a href="<%= it.url %>"><%= it.name %></a></span><% if (it.pypi) { %><span class="m"> · PyPI <a href="https://pypi.org/project/<%= it.name %>/"><%= it.pypi %></a></span><% } %><br><span class="m"><%= it.description %></span><% if (it.homepage) { %><br><span class="links"><a href="<%= it.homepage %>">Site</a></span><% } %></li>
-<% } %></ul>
-```

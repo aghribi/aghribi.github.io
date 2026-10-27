@@ -1,0 +1,115 @@
+# Project cards. Hand-written; every link must resolve. featured: shown on the home page.
+- title: FCC-ee high energy booster
+  summary: Collective effects in the booster ring of the Future Circular Collider. Impedance model, intrabeam scattering and instability thresholds.
+  categories: [Research]
+  status: Ongoing
+  period: 2023 to now
+  tags: [beam dynamics, impedance, CERN]
+  featured: true
+  links:
+    - {label: FCC Week 2025 talk, url: "https://indico.cern.ch/event/1408515/contributions/6515048/"}
+    - {label: IPAC 2026 paper, url: "https://inspirehep.net/literature/3162565"}
+
+- title: LLRF fault diagnosis for SPIRAL2
+  summary: Machine-learning pipeline that detects, classifies and explains faults in the control of superconducting RF cavities at GANIL.
+  image: assets/projects/llrf.jpg
+  categories: [Research, Open source]
+  status: Released
+  period: 2025 to 2026
+  tags: [anomaly detection, explainability, Python]
+  featured: true
+  links:
+    - {label: Site, url: "https://aghribi.github.io/LLRF_SP2_pipeline/"}
+    - {label: Code, url: "https://github.com/aghribi/LLRF_SP2_pipeline"}
+
+- title: Living review of AI/ML for accelerators
+  summary: Continuously updated review of machine-learning and AI applications in accelerator science, built from structured data.
+  image: assets/projects/living-review.jpg
+  categories: [Research, Open source]
+  status: Live
+  period: 2025 to now
+  tags: [literature review, automation, Hugo]
+  featured: true
+  links:
+    - {label: Site, url: "https://aghribi.github.io/acc-ml-living-review/"}
+    - {label: Code, url: "https://github.com/aghribi/acc-ml-living-review"}
+    - {label: arXiv, url: "https://arxiv.org/abs/2510.09376"}
+
+- title: ag-* libraries
+  summary: Open-source building blocks for LLM applications. PII tokenization, evaluation, runtime guardrails and document extraction. On PyPI.
+  image: assets/projects/ag-tools.jpg
+  categories: [Open source]
+  status: Released
+  period: 2026
+  tags: [Python, LLM, PyPI]
+  featured: true
+  links:
+    - {label: Site, url: "https://aghribi.github.io/ag-tools/"}
+    - {label: ag-pii-vault, url: "https://github.com/aghribi/ag-pii-vault"}
+    - {label: ag-evalforge, url: "https://github.com/aghribi/ag-evalforge"}
+    - {label: ag-guardrail, url: "https://github.com/aghribi/ag-guardrail"}
+    - {label: ag-docparse, url: "https://github.com/aghribi/ag-docparse"}
+
+- title: Agora-Conf
+  summary: Conference companion built on Indico. Programme, slides and annotations in one place. Used at the AISSAI Accelerator Hackathon 2026.
+  image: assets/projects/agora-conf.jpg
+  categories: [Open source]
+  status: Live
+  period: 2026
+  tags: [web app, Indico, ORCID login]
+  featured: true
+  links:
+    - {label: App, url: "https://agora.artifact-network.org"}
+
+- title: ARTIFACT network
+  summary: Collaborative AI research network for accelerator technologies, advancing FAIR data practices across accelerator facilities.
+  image: assets/projects/artifact.jpg
+  categories: [Community]
+  status: Ongoing
+  period: 2023 to now
+  tags: [AI for accelerators, FAIR data, Europe]
+  featured: true
+  links:
+    - {label: Site, url: "https://artifact-network.org"}
+    - {label: TIARA 2024 talk, url: "https://indico.cern.ch/event/1385973/contributions/5826338/"}
+
+- title: AI for medical accelerators
+  summary: Lecture at the CERN Accelerator School. Fault detection on RF waveforms, Bayesian optimisation for beam tuning, surrogate models and digital twins.
+  image: assets/projects/cas2026.jpg
+  categories: [Teaching]
+  status: Delivered
+  period: June 2026
+  tags: [lecture, CAS, medical accelerators]
+  links:
+    - {label: Slides, url: "https://aghribi.github.io/cas2026-ai-medical-accelerators/"}
+    - {label: Indico, url: "https://indico.cern.ch/event/1587419/contributions/6995110/"}
+
+- title: AISSAI Accelerator Hackathon 2026
+  summary: One-week hackathon on AI for accelerators at GANIL, 11 to 16 October 2026.
+  categories: [Teaching, Community]
+  status: Delivered
+  period: October 2026
+  tags: [hackathon, GANIL]
+  links:
+    - {label: Code, url: "https://github.com/aghribi/artifact-hackathon-2026"}
+    - {label: Pages, url: "https://aghribi.github.io/artifact-hackathon-2026/"}
+
+- title: SPIRAL2 linac cryogenics
+  summary: Cryogenic commissioning and operation of the SPIRAL2 superconducting linac, then a neural-network model of its dynamic heat load.
+  categories: [Research]
+  status: Completed
+  period: 2014 to 2023
+  tags: [cryogenics, SRF, machine learning]
+  links:
+    - {label: PRAB 2025, url: "https://doi.org/10.1103/82xr-d9gc"}
+    - {label: Heat-load dataset, url: "https://doi.org/10.5281/zenodo.17524143"}
+
+- title: CMB instrumentation
+  summary: Superconducting millimetre-wave components and bolometric interferometry for cosmic microwave background polarisation. QUBIC and POLARBEAR.
+  categories: [Research]
+  status: Completed
+  period: 2006 to 2014
+  tags: [cosmology, superconducting detectors, mm-wave]
+  links:
+    - {label: PhD thesis, url: "https://theses.fr/2009PA077221"}
+    - {label: Papers, url: "https://inspirehep.net/authors/1245936"}

@@ -1,17 +1,95 @@
 ---
-title: "Adnan Ghribi"
-subtitle: "Accelerator physicist, GANIL (CNRS), Caen"
+pagetitle: "Adnan Ghribi"
+page-layout: full
+listing:
+  - id: stats
+    contents: data/stats.yml
+    template: _templates/stats.ejs
+  - id: featured
+    contents: data/projects.yml
+    include: {featured: true}
+    template: _templates/projects.ejs
+  - id: latest-pubs
+    contents: data/publications.yml
+    exclude: {category: collaboration}
+    max-items: 4
+    template: _templates/publications.ejs
+  - id: latest-talks
+    contents: data/talks.yml
+    max-items: 4
+    template: _templates/talks.ejs
 ---
 
-Research engineer at CNRS, based at GANIL since 2014.
-Works on artificial intelligence for particle accelerators and on collective effects in the FCC-ee high energy booster.
-Visiting scientist at CERN (BE-ABP-LAF) since 2024.
+```{=html}
+<section class="hero">
+  <p class="kicker">Accelerator physics · Machine learning</p>
+  <h1>Adnan Ghribi</h1>
+  <p class="role">Accelerator physicist at GANIL (CNRS), visiting scientist at CERN</p>
+  <p class="bio">I build machine-learning tools for particle accelerators and study collective effects in the FCC-ee high energy booster.
+  Fault diagnosis on superconducting RF, surrogate models, Bayesian optimisation, open-source LLM tooling.
+  Earlier: cryogenics for the SPIRAL2 linac, and instrumentation for CMB polarisation experiments.</p>
+  <div class="cta">
+    <a class="btn-pill primary" href="projects.html">Projects</a>
+    <a class="btn-pill" href="publications.html">Publications</a>
+    <a class="btn-pill" href="https://github.com/aghribi">GitHub</a>
+    <a class="btn-pill" href="https://orcid.org/0000-0001-9634-4526">ORCID</a>
+    <a class="btn-pill" href="https://inspirehep.net/authors/1245936">INSPIRE</a>
+  </div>
+</section>
+```
 
-Earlier work in experimental cosmology: superconducting millimetre-wave components, bolometric interferometry (QUBIC) and the POLARBEAR experiment, at APC Paris and UC Berkeley.
-Then cryogenics for the SPIRAL2 superconducting linac at GANIL.
+::: {#stats}
+:::
 
-## Profiles
+<p class="kicker" style="margin-top:3rem">Selected work</p>
 
-- ORCID: [0000-0001-9634-4526](https://orcid.org/0000-0001-9634-4526)
-- INSPIRE: [A.Ghribi.1](https://inspirehep.net/authors/1245936)
-- GitHub: [aghribi](https://github.com/aghribi)
+## Projects
+
+::: {#featured}
+:::
+
+[All projects →](projects.qmd){.more}
+
+<p class="kicker" style="margin-top:3rem">Toolbox</p>
+
+## Expertise
+
+```{=html}
+<div class="skills">
+  <div><h3>Accelerator physics</h3><div class="chips">
+    <span class="chip">collective effects</span><span class="chip">impedance</span><span class="chip">intrabeam scattering</span><span class="chip">booster design</span><span class="chip">superconducting RF</span><span class="chip">LLRF</span><span class="chip">cryogenics</span></div></div>
+  <div><h3>Machine learning</h3><div class="chips">
+    <span class="chip">anomaly detection</span><span class="chip">autoencoders</span><span class="chip">explainability</span><span class="chip">Bayesian optimisation</span><span class="chip">surrogate models</span><span class="chip">digital twins</span><span class="chip">LLM tooling</span></div></div>
+  <div><h3>Engineering</h3><div class="chips">
+    <span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">PyPI packages</span><span class="chip">web apps</span><span class="chip">FAIR data</span><span class="chip">static sites</span></div></div>
+</div>
+```
+
+:::: {.columns}
+::: {.column width="48%"}
+
+<p class="kicker" style="margin-top:2rem">Recent</p>
+
+## Publications
+
+::: {#latest-pubs}
+:::
+
+[All publications →](publications.qmd){.more}
+
+:::
+::: {.column width="4%"}
+:::
+::: {.column width="48%"}
+
+<p class="kicker" style="margin-top:2rem">Recent</p>
+
+## Talks
+
+::: {#latest-talks}
+:::
+
+[All talks →](talks.qmd){.more}
+
+:::
+::::
