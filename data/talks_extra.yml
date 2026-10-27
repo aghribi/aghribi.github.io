@@ -44,3 +44,8 @@
   event: IN2P3/IRFU Machine Learning workshop 2025
   location: LPC Caen and GANIL
   url: https://indico.in2p3.fr/event/36597/contributions/163873/
+- date: 2026-04
+  title: "AI for Particle Accelerators: French and European Efforts"
+  event: MaLAPA 2026
+  location: Himeji, Japan
+  url: https://github.com/tiamiceli/summary-malapa-2026   # the Indico page needs a login; this public export lists the talk

@@ -599,25 +599,6 @@
   inspire: https://inspirehep.net/literature/2175223
   url: null
   confirmed_by: INSPIRE
-- title: Cryogenic thermo-acoustic oscillations highlight and study in the SPIRAL2 superconducting LINAC
-  authors:
-  - name: Adnan Ghribi
-    me: true
-  - name: Muhammad Aburas
-    me: false
-  - name: Yoann Baumont
-    me: false
-  - name: et al.
-    me: false
-  venue: arXiv:2101.10768
-  year: 2021
-  category: preprint
-  collaboration: null
-  doi: null
-  arxiv: '2101.10768'
-  inspire: https://inspirehep.net/literature/1842918
-  url: null
-  confirmed_by: INSPIRE
 - title: Développements Instrumentaux pour la Physique Expérimentale
   authors:
   - name: Adnan Ghribi

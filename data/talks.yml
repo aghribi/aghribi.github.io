@@ -22,6 +22,12 @@
   location: University of Helsinki
   url: https://indico.cern.ch/event/1552126/contributions/7119541/
   confirmed_by: CERN Indico
+- date: 2026-04
+  title: 'AI for Particle Accelerators: French and European Efforts'
+  event: MaLAPA 2026
+  location: Himeji, Japan
+  url: https://github.com/tiamiceli/summary-malapa-2026
+  confirmed_by: https://github.com/tiamiceli/summary-malapa-2026
 - date: '2025-11-27'
   title: AI for the Design and Operation of Particle Accelerators
   event: IN2P3/IRFU Machine Learning workshop 2025

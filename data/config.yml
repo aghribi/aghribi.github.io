@@ -12,3 +12,4 @@ max_authors: 6
 collaboration_min_authors: 30          # above this, a paper is listed under collaboration papers
 publications_exclude:                  # DOI or INSPIRE URL
   - https://inspirehep.net/literature/2647823   # arXiv twin of the IPAC 2023 tolerances paper, title typo defeats the merge
+  - https://inspirehep.net/literature/1842918   # arXiv:2101.10768, earlier version of the Cryogenics 2022 thermoacoustics paper
