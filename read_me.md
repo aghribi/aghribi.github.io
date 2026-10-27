@@ -20,7 +20,7 @@
 ## Update
 
 ```sh
-uv run scripts/data.py all   # publications, talks, software
+uv run scripts/data.py all   # publications, talks, link check
 quarto preview               # check locally
 git commit -am "data: refresh" && git push   # GitHub Actions renders and deploys
 ```

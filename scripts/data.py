@@ -4,7 +4,7 @@
 # ///
 """Build the site data files from public databases and the local bib files.
 
-uv run scripts/data.py [publications|talks|software|all]
+uv run scripts/data.py [publications|talks|projects|all]
 
 Nothing reaches the page unless a database confirms it. Unconfirmed items go
 to data/*_review.yml for a human to check.
@@ -308,24 +308,6 @@ def talks():
     dump("talks_review.yml", review)
 
 
-# ---------------------------------------------------------------- software
-
-def software():
-    repos = get(f"https://api.github.com/users/{CONFIG['github']}/repos?per_page=100&type=owner")
-    out = []
-    for r in repos:
-        if r["fork"] or r["private"] or r["name"] in CONFIG["software_exclude"]:
-            continue
-        pypi = get(f"https://pypi.org/pypi/{r['name']}/json")
-        out.append({"name": r["name"], "description": r["description"] or "", "url": r["html_url"],
-                    "homepage": r["homepage"] or None, "language": r["language"],
-                    "group": "libraries" if r["name"].startswith(CONFIG["library_prefix"]) else "research",
-                    "pypi": pypi["info"]["version"] if pypi else None,
-                    "updated": r["pushed_at"][:10]})
-    out.sort(key=lambda s: (s["group"], s["name"]))
-    dump("software.yml", out)
-
-
 # ---------------------------------------------------------------- projects
 
 def projects():
@@ -341,6 +323,6 @@ def projects():
 
 
 if __name__ == "__main__":
-    jobs = {"publications": publications, "talks": talks, "software": software, "projects": projects}
+    jobs = {"publications": publications, "talks": talks, "projects": projects}
     for name in (jobs if sys.argv[1:] in ([], ["all"]) else sys.argv[1:]):
         jobs[name]()
