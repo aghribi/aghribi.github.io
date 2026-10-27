@@ -151,6 +151,7 @@
   status: Completed
   period: 2006 to 2014
   tags: [cosmology, superconducting detectors, mm-wave]
+  featured: work
   links:
     - {label: PhD thesis, url: "https://theses.fr/2009PA077221"}
     - {label: Papers, url: "https://inspirehep.net/authors/1245936"}
