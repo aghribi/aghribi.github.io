@@ -1327,6 +1327,19 @@
   inspire: https://inspirehep.net/literature/1337912
   url: null
   confirmed_by: INSPIRE
+- title: 'Composants millimétriques supra-conducteurs: pour la mesure de la polarisation du fond diffus cosmologique'
+  authors:
+  - name: A. Ghribi
+    me: true
+  venue: Éditions universitaires européennes, ISBN 978-613-1-55018-8
+  year: 2010
+  category: book
+  collaboration: null
+  doi: null
+  arxiv: null
+  inspire: null
+  url: https://www.abebooks.com/book-search/author/ghribi-adnan/
+  confirmed_by: https://www.abebooks.com/book-search/author/ghribi-adnan/
 - title: The POLARBEAR CMB polarization experiment
   authors:
   - name: K. Arnold
