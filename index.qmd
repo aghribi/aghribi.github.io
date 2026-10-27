@@ -25,9 +25,8 @@ listing:
   <p class="kicker">Accelerator physics · Machine learning</p>
   <h1>Adnan Ghribi</h1>
   <p class="role">Accelerator physicist at GANIL (CNRS), visiting scientist at CERN</p>
-  <p class="bio">I build machine-learning tools for particle accelerators and study collective effects in the FCC-ee high energy booster.
-  Fault diagnosis on superconducting RF, surrogate models, Bayesian optimisation, open-source LLM tooling.
-  Earlier: cryogenics for the SPIRAL2 linac, and instrumentation for CMB polarisation experiments.</p>
+  <p class="bio">I connect models, data and experiments to build explainable, predictive and open science, where artificial intelligence extends physics instead of replacing it.
+  From experimental cosmology to particle accelerators: collective effects in the FCC-ee booster, machine learning for superconducting linacs, and the networks that bring the community together.</p>
   <div class="cta">
     <a class="btn-pill primary" href="projects.html">Projects</a>
     <a class="btn-pill" href="publications.html">Publications</a>
@@ -40,6 +39,19 @@ listing:
 
 ::: {#stats}
 :::
+
+<p class="kicker" style="margin-top:3rem">Trajectory</p>
+
+## From modelling the real world to integrated scientific intelligence
+
+```{=html}
+<div class="path">
+  <div class="step" style="--c:#1f3a5f"><span class="when">2006 to 2015</span><h3>Experimental cosmology</h3><p class="where">QUBIC · POLARBEAR · LiteBIRD</p><p>Design, integration and deployment of instruments for CMB polarisation, from the lab to the Atacama desert.</p></div>
+  <div class="step" style="--c:#f26b38"><span class="when">2015 to 2020</span><h3>Multiphysics modelling</h3><p class="where">SPIRAL2 · GRAAL</p><p>Thermal, mechanical and fluid models of the SPIRAL2 superconducting linac, confronted with operation data. Scientific lead of GRAAL.</p></div>
+  <div class="step" style="--c:#13a3a3"><span class="when">2020 to now</span><h3>Future particle accelerators</h3><p class="where">FCC-ee</p><p>Collective effects in the FCC-ee high energy booster with CEA/LEDA and CERN, on Jean Zay, Adastra, CC-IN2P3, LXPLUS and CRIANN.</p></div>
+  <div class="step" style="--c:#43a547"><span class="when">2020 to now</span><h3>Scientific AI and intelligent infrastructures</h3><p class="where">M4CAST · MLAcc · ARTIFACT</p><p>Hybrid models, virtual observers and anomaly detection. National and European networks for data, simulation and AI.</p></div>
+</div>
+```
 
 <p class="kicker" style="margin-top:3rem">Selected work</p>
 

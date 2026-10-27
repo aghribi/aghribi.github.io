@@ -4,11 +4,13 @@ title: "Research"
 
 ## Current roles
 
-- Since 2024: in charge of artificial intelligence developments for the GANIL accelerator division.
-- Since 2023: in charge of collective effects studies for the [FCC-ee](https://home.cern/science/accelerators/future-circular-collider) high energy booster.
-- Since 2022: scientific coordinator of M4CAST, the French network on AI for accelerators.
-- Scientific coordinator of InM4CAST (ANR MRSEI/AMORCE) and MLAcc (CNRS master project on AI for accelerators).
-- [ARTIFACT](https://artifact-network.org) network.
+- Coordinator of [TwinRISE](https://cordis.europa.eu/project/id/101287548), Horizon Europe project on trusted AI-generated digital twins for research infrastructures (2027 to 2030).
+- Co-creator and coordinator of the [ARTIFACT](https://artifact-network.org) network, more than forty European partners.
+- Work-package lead in iRIS.
+- Coordinator of M4CAST, the French network on AI for accelerators (since 2022), and of the CNRS master project MLAcc.
+- In charge of AI developments for the GANIL accelerator division (since 2024).
+- In charge of collective effects for the [FCC-ee](https://home.cern/science/accelerators/future-circular-collider) high energy booster (since 2023).
+- Expert for the European Commission, MSCA Postdoctoral Fellowships physics panel. Reviewer and guest editor (Physical Review, Springer Nature, Frontiers in Physics).
 
 ## Positions
 
@@ -26,6 +28,7 @@ title: "Research"
 - 2017 to 2021: cryogenic commissioning of the SPIRAL2 linac.
 - 2016 to 2018: SPIRAL2 linac cryoplant.
 - 2015 to 2017: cryogenics at GANIL.
+- 2015 to 2019: scientific lead of the GRAAL collaboration on multiphysics modelling of large cryogenic systems.
 - 2014 to 2023: R&D for cryogenics.
 
 ## Education

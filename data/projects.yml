@@ -1,6 +1,7 @@
 # Project cards. Hand-written; every link must resolve. featured: shown on the home page.
 - title: FCC-ee high energy booster
-  summary: Collective effects in the booster ring of the Future Circular Collider. Impedance model, intrabeam scattering and instability thresholds.
+  role: In charge of collective effects
+  summary: Collective effects in the 100 km booster ring of the Future Circular Collider. Impedance model, intrabeam scattering, single- and multi-bunch instabilities, RF budget. Xsuite and PyHEADTAIL on HPC.
   categories: [Research]
   status: Ongoing
   period: 2023 to now
@@ -9,6 +10,11 @@
   links:
     - {label: FCC Week 2025 talk, url: "https://indico.cern.ch/event/1408515/contributions/6515048/"}
     - {label: IPAC 2026 paper, url: "https://inspirehep.net/literature/3162565"}
+    - {label: GitLab, url: "https://gitlab.cern.ch/fcc-ee_collective_effects"}
+    - {label: xsuite_heb, url: "https://gitlab.cern.ch/fcc-ee_collective_effects/heb/single_bunch_instabilities/xsuite_heb"}
+    - {label: pyhdt_heb, url: "https://gitlab.cern.ch/fcc-ee_collective_effects/heb/single_bunch_instabilities/pyhdt_heb"}
+    - {label: pycolleff_heb, url: "https://gitlab.cern.ch/fcc-ee_collective_effects/heb/multi_bunch_instabilities/pycolleff_heb"}
+    - {label: RF budget, url: "https://gitlab.cern.ch/fcc-ee-perso/fcc-ee-heb-rf-budget"}
 
 - title: LLRF fault diagnosis for SPIRAL2
   summary: Machine-learning pipeline that detects, classifies and explains faults in the control of superconducting RF cavities at GANIL.
@@ -62,7 +68,8 @@
     - {label: App, url: "https://agora.artifact-network.org"}
 
 - title: ARTIFACT network
-  summary: Collaborative AI research network for accelerator technologies, advancing FAIR data practices across accelerator facilities.
+  role: Co-creator and coordinator
+  summary: European network on data, simulation and AI for accelerator technologies. More than forty partners from infrastructures, institutes, universities and companies, supported by TIARA and NuPECC.
   image: assets/projects/artifact.jpg
   categories: [Community]
   status: Ongoing
@@ -72,6 +79,14 @@
   links:
     - {label: Site, url: "https://artifact-network.org"}
     - {label: TIARA 2024 talk, url: "https://indico.cern.ch/event/1385973/contributions/5826338/"}
+
+- title: M4CAST and MLAcc
+  role: Coordinator
+  summary: French network on AI for particle accelerators, grown from the GRAAL collaboration, and the CNRS master project MLAcc. Monthly seminars and yearly workshops across most French accelerator labs.
+  categories: [Community]
+  status: Ongoing
+  period: 2022 to now
+  tags: [AI for accelerators, France, IN2P3]
 
 - title: AI for medical accelerators
   summary: Lecture at the CERN Accelerator School. Fault detection on RF waveforms, Bayesian optimisation for beam tuning, surrogate models and digital twins.
