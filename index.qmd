@@ -15,6 +15,17 @@ listing:
     exclude: {category: collaboration}
     max-items: 4
     template: _templates/publications.ejs
+  - id: rec-pubs
+    contents: data/publications.yml
+    template: _templates/record.ejs
+  - id: rec-talks
+    contents: data/talks.yml
+    date-format: YYYY-MM-DD
+    template: _templates/record.ejs
+  - id: rec-archive
+    contents: data/talks_archive.yml
+    date-format: YYYY-MM-DD
+    template: _templates/record.ejs
   - id: latest-talks
     contents: data/talks.yml
     max-items: 4
@@ -22,21 +33,47 @@ listing:
 ---
 
 ```{=html}
-<section class="hero">
-  <p class="kicker">Accelerator physics · Machine learning</p>
+<section class="hero term" aria-label="Introduction">
+  <div class="bar" aria-hidden="true"><span></span><span></span><span></span><em>~</em></div>
+  <div class="screen">
+  <p class="cmd"><span class="ps">~ $</span> <span class="in">whoami</span></p>
   <h1>Adnan Ghribi</h1>
   <p class="role">Accelerator physicist, GANIL (CNRS) · Visiting scientist, CERN</p>
+  <p class="cmd"><span class="ps">~ $</span> <span class="in">cat about.txt</span></p>
   <p class="bio">I work on the physics of particle accelerators and on the AI that helps design and run them.
   I lead collective-effects studies for the FCC-ee high energy booster, build machine-learning tools for superconducting linacs, and coordinate the TwinRISE project and the ARTIFACT network.</p>
+  <p class="cmd"><span class="ps">~ $</span> <span class="in">ls links/</span></p>
   <div class="cta">
-    <a class="btn-pill primary" href="projects.html">Projects</a>
-    <a class="btn-pill" href="publications.html">Publications</a>
-    <a class="btn-pill" href="https://github.com/aghribi">GitHub</a>
-    <a class="btn-pill" href="https://orcid.org/0000-0001-9634-4526">ORCID</a>
-    <a class="btn-pill" href="https://inspirehep.net/authors/1245936">INSPIRE</a>
+    <a href="projects.html">projects/</a>
+    <a href="publications.html">publications.bib</a>
+    <a href="talks.html">talks/</a>
+    <a href="https://github.com/aghribi">github</a>
+    <a href="https://orcid.org/0000-0001-9634-4526">orcid</a>
+    <a href="https://inspirehep.net/authors/1245936">inspire</a>
+  </div>
+  <p class="cmd last"><span class="ps">~ $</span> <span class="cur" aria-hidden="true"></span></p>
   </div>
 </section>
 ```
+
+<p class="kicker" style="margin-top:3rem">Record</p>
+
+## Papers and talks over time
+
+<p class="lede">One mark per publication (above the axis) and per talk (below), coloured by type. Hover or focus a mark for its title; click to open it. Talks before 2021 come from my slides and have no link.</p>
+
+```{=html}
+<figure class="record"><svg id="record" role="img" aria-label="Timeline of publications and talks"></svg><div class="rec-legend" id="rec-legend"></div><figcaption id="rec-tip" aria-live="polite">&nbsp;</figcaption></figure>
+```
+
+::: {#rec-pubs}
+:::
+
+::: {#rec-talks}
+:::
+
+::: {#rec-archive}
+:::
 
 <p class="kicker" style="margin-top:3rem">Coordination</p>
 

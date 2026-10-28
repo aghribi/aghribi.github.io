@@ -1,0 +1,3 @@
+```{=html}
+<div class="rec-data" hidden><% for (const it of items) { %><i data-t="<%= it.title %>" data-v="<%= it.venue || it.event || '' %>" data-y="<%= it.year || '' %>" data-d="<%= it.date || '' %>" data-c="<%= it.category || 'talk' %>" data-u="<%= it.url || (it.doi ? 'https://doi.org/' + it.doi : '') || it.inspire || '' %>"></i><% } %></div>
+```

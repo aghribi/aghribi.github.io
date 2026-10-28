@@ -2,6 +2,7 @@ project:
   type: website
   output-dir: _site
   render: ["*.qmd"]
+  resources: ["assets/**"]
 
 website:
   title: "Adnan Ghribi"
@@ -31,8 +32,13 @@ website:
 
 format:
   html:
+    lang: en
     theme:
-      light: [cosmo, theme.scss, light.scss]
       dark: [darkly, theme.scss, dark.scss]
+      light: [cosmo, theme.scss, light.scss]
+    include-before-body:
+      text: '<a class="skip-link" href="#quarto-document-content">Skip to content</a>'
+    include-after-body:
+      text: '<script src="assets/fx.js" defer></script>'
     toc: false
     anchor-sections: false

@@ -24,6 +24,7 @@
     - {label: Kick-off at FCC Week 2026, url: "https://indico.cern.ch/event/1552126/contributions/7119541/"}
 
 - title: FCC-ee high energy booster
+  image: assets/projects/fcc-ee-impedance.svg
   role: In charge of collective effects
   summary: Collective effects in the 100 km booster ring of the Future Circular Collider. Impedance model, intrabeam scattering, single- and multi-bunch instabilities, RF budget. Xsuite and PyHEADTAIL on HPC.
   categories: [Research]
@@ -140,6 +141,7 @@
     - {label: Pages, url: "https://aghribi.github.io/artifact-hackathon-2026/"}
 
 - title: SPIRAL2 linac cryogenics
+  image: assets/projects/spiral2-heatload.svg
   summary: Cryogenic commissioning and operation of the SPIRAL2 superconducting linac, then a neural-network model of its dynamic heat load.
   categories: [Research]
   status: Completed
@@ -150,12 +152,92 @@
     - {label: Heat-load dataset, url: "https://doi.org/10.5281/zenodo.17524143"}
 
 - title: CMB instrumentation
-  summary: Superconducting millimetre-wave components and bolometric interferometry for cosmic microwave background polarisation. QUBIC and POLARBEAR.
+  summary: Superconducting millimetre-wave components, detectors and bolometric interferometry for cosmic microwave background polarisation. QUBIC (detection chain integration), POLARBEAR (detector fabrication, first-light deployment), LiteBIRD, NASA multichroic detectors, ESA CORE+ and PRISM proposals, ESA ITT on detector coupling, CNES R&D.
   categories: [Research]
   status: Completed
   period: 2006 to 2014
-  tags: [cosmology, superconducting detectors, mm-wave]
+  tags: [cosmology, superconducting detectors, mm-wave, space missions]
   featured: work
   links:
     - {label: PhD thesis, url: "https://theses.fr/2009PA077221"}
     - {label: Papers, url: "https://inspirehep.net/authors/1245936"}
+
+- title: QUBIC
+  role: Cryogenic test benches, then detection chain integration
+  summary: Bolometric interferometer for the B-mode polarisation of the cosmic microwave background.
+  categories: [Research]
+  status: Completed
+  period: 2009 to 2014
+  tags: [cosmology, bolometric interferometry]
+  links:
+    - {label: APPEC, url: "https://www.appec.org/news/qubic-a-qu-bolometric-interferometer-for-cosmology"}
+
+- title: POLARBEAR
+  role: Detector fabrication, first-light deployment
+  summary: Ground-based CMB polarisation experiment (NSF). Clean-room fabrication of the detectors and deployment of the instrument on the Atacama plateau.
+  categories: [Research]
+  status: Completed
+  period: 2010 to 2012
+  tags: [cosmology, superconducting detectors, UC Berkeley]
+  links:
+    - {label: LAMBDA, url: "https://lambda.gsfc.nasa.gov/product/polarbear/"}
+
+- title: POLARBEAR-2, Simons Array and GroundBIRD
+  summary: Ground-based CMB polarisation experiments that followed POLARBEAR.
+  categories: [Research]
+  status: Completed
+  period: 2010 to 2012
+  tags: [cosmology, UC Berkeley]
+
+- title: LiteBIRD
+  summary: Space mission for CMB polarisation (JAXA, NASA). Polarisation modulators.
+  categories: [Research]
+  status: Completed
+  period: 2010 to 2012
+  tags: [cosmology, space mission, UC Berkeley]
+  links:
+    - {label: JAXA, url: "https://www.isas.jaxa.jp/en/missions/spacecraft/future/litebird.html"}
+
+- title: Cryogenic multichroic detectors (NASA)
+  summary: NASA R&D programme on cryogenic multichroic detectors for CMB polarisation.
+  categories: [Research]
+  status: Completed
+  period: 2010 to 2012
+  tags: [superconducting detectors, R&D, UC Berkeley]
+
+- title: CORE+ and PRISM
+  summary: Preparation of ESA space mission proposals for CMB polarisation.
+  categories: [Research]
+  status: Completed
+  period: 2012 to 2014
+  tags: [cosmology, space mission, ESA]
+
+- title: ESA ITT AO/1-7136/12/NL/MH
+  role: Work package on detector coupling techniques
+  summary: ESA R&D contract on detector coupling techniques for future space instruments.
+  categories: [Research]
+  status: Completed
+  period: 2012 to 2014
+  tags: [R&D, ESA]
+
+- title: CNES R&D, DCMB, BSD and BSD-Défi
+  summary: CNES R&D programmes on detection chains for CMB polarisation.
+  categories: [Research]
+  status: Completed
+  period: 2009 to 2014
+  tags: [R&D, CNES]
+
+- title: COSMOS, COS2 and DEFI
+  summary: ANR (COSMOS, COS2) and CNRS (DEFI) R&D programmes for cosmology instrumentation.
+  categories: [Research]
+  status: Completed
+  period: 2012 to 2014
+  tags: [R&D, ANR, CNRS]
+
+- title: GRAAL
+  role: Scientific coordinator
+  summary: CEA/CNRS collaboration between GANIL and CEA SBT on accelerator cryogenics.
+  categories: [Research]
+  status: Completed
+  period: 2016 to 2019
+  tags: [cryogenics, CEA, CNRS]

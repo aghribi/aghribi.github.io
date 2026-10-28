@@ -1,4 +1,13 @@
 /*-- scss:defaults --*/
-// Navbar in the page colours (darkly body). Quarto draws the theme toggle icon with $navbar-fg.
-$navbar-bg: #222;
-$navbar-fg: #fff;
+// Monokai.
+$body-bg: #272822;
+$body-color: #f8f8f2;
+$primary: #f92672;
+$link-color: #66d9ef;
+$navbar-bg: #1e1f1c;
+$navbar-fg: #f8f8f2;
+$footer-bg: #1e1f1c;
+$input-bg: #1e1f1c;
+$mk-pink: #f92672; $mk-green: #a6e22e; $mk-cyan: #66d9ef; $mk-orange: #fd971f; $mk-purple: #ae81ff; $mk-yellow: #e6db74;
+$mk-muted: #b3ae96;
+$mk-on-primary: #1e1f1c;
