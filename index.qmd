@@ -78,6 +78,8 @@ Seven axes, each feeding European projects.
 <div class="skills">
   <div><h3>Accelerator physics</h3><div class="chips">
     <span class="chip">collective effects</span><span class="chip">impedance</span><span class="chip">intrabeam scattering</span><span class="chip">booster design</span><span class="chip">superconducting RF</span><span class="chip">LLRF</span><span class="chip">cryogenics</span></div></div>
+  <div><h3>Cosmology and instrumentation</h3><div class="chips">
+    <span class="chip">CMB polarisation</span><span class="chip">bolometric interferometry</span><span class="chip">superconducting detectors</span><span class="chip">mm-wave components</span></div></div>
   <div><h3>Machine learning</h3><div class="chips">
     <span class="chip">anomaly detection</span><span class="chip">autoencoders</span><span class="chip">explainability</span><span class="chip">Bayesian optimisation</span><span class="chip">surrogate models</span><span class="chip">digital twins</span><span class="chip">LLM tooling</span></div></div>
   <div><h3>Engineering</h3><div class="chips">
