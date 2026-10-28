@@ -152,11 +152,11 @@
     - {label: Heat-load dataset, url: "https://doi.org/10.5281/zenodo.17524143"}
 
 - title: CMB instrumentation
-  summary: Superconducting millimetre-wave components and bolometric interferometry for cosmic microwave background polarisation. QUBIC and POLARBEAR.
+  summary: Superconducting millimetre-wave components, detectors and bolometric interferometry for cosmic microwave background polarisation. QUBIC (detection chain integration), POLARBEAR (detector fabrication, first-light deployment), LiteBIRD, NASA multichroic detectors, ESA CORE+ and PRISM proposals, ESA ITT on detector coupling, CNES R&D.
   categories: [Research]
   status: Completed
   period: 2006 to 2014
-  tags: [cosmology, superconducting detectors, mm-wave]
+  tags: [cosmology, superconducting detectors, mm-wave, space missions]
   featured: work
   links:
     - {label: PhD thesis, url: "https://theses.fr/2009PA077221"}

@@ -1,0 +1,23 @@
+# Talks before 2021 with no public record. Title, date and event as on the first slide.
+# Shown on the home-page record only, without a link.
+- {year: 2007, date: 2007-04-26, title: "DIBO, demonstrator for interferometric bolometry", event: "CMB@APC meeting"}
+- {year: 2007, date: 2007-06-29, title: "Antennas and phase shifters", event: "Atelier BRAIN"}
+- {year: 2007, title: "Presentation at NTTI 2007", event: "NTTI 2007"}
+- {year: 2008, title: "Advanced detection architecture and bolometric interferometry for CMB polarization measurements", event: "Workshop on a new generation of ultra-sensitive detectors for dark energy and cosmology experiments, Kiruna"}
+- {year: 2008, title: "Orthomode transducers and a possible planar solution for bolometric interferometry", event: "Bolometric interferometry workshop, Paris"}
+- {year: 2009, title: "Millimeter wave orthomode transducer for cosmology", event: "5th ESA Workshop on Millimetre Wave Technology and Applications, ESTEC"}
+- {year: 2009, title: "Linear phase shifter design for QUBIC", event: "QUBIC"}
+- {year: 2009, title: "PhD defence: superconducting planar RF components for CMB polarisation and bolometric interferometry", event: "Université Paris 7 Denis Diderot, APC"}
+- {year: 2010, date: 2010-10-15, title: "Design review: scale model structures", event: "UC Berkeley"}
+- {year: 2010, date: 2010-11-03, title: "Overview of modulators for cosmology", event: "LiteBIRD meeting, UC Berkeley"}
+- {year: 2013, date: 2013-04-01, title: "Work package 2.4 review: detectors coupling techniques", event: "ESA ITT AO/1-7136/12/NL/MH, ESTEC"}
+- {year: 2013, title: "QUBIC (invited keynote)", event: "15th International Workshop on Low Temperature Detectors (LTD15)"}
+- {year: 2014, date: 2014-04-14, title: "Seminar on CMB polarimetry", event: "CPPM, Marseille"}
+- {year: 2014, date: 2014-05-08, title: "Polarimétrie du fond diffus cosmologique: enjeux et avenir", event: "Cosmology seminar, CPPM, Marseille"}
+- {year: 2015, title: "SPIRAL 2 système cryogénique", event: "Journées Liquéfacteurs 2015"}
+- {year: 2016, date: 2016-03-07, title: "SPIRAL 2 cryogenic system", event: "26th International Cryogenic Engineering Conference (ICEC26), New Delhi"}
+- {year: 2016, date: 2016-07-27, title: "Dispositifs de détection supraconductrice à couche mince pour la mesure des ondes gravitationnelles primordiales", event: "JASMINA 6, CRMN Sousse"}
+- {year: 2017, date: 2017-04-28, title: "Cosmic microwave background polarimetry: stakes and challenges", event: "GANIL physics seminar"}
+- {year: 2017, title: "SPIRAL 2 cryogenic system", event: "Seminar at ESS"}
+- {year: 2018, title: "Mise en froid du LINAC SPIRAL 2 (cooldown of March 2017)", event: "Seminar, GANIL cryogenics group and GRAAL project"}
+- {year: 2018, date: 2018-05-15, title: "Collaboration GANIL-SBT: discussion autour du projet GRAAL", event: "Seminar at CEA SBT"}

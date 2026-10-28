@@ -22,6 +22,14 @@ listing:
     contents: data/talks.yml
     date-format: YYYY-MM-DD
     template: _templates/record.ejs
+  - id: rec-archive
+    contents: data/talks_archive.yml
+    date-format: YYYY-MM-DD
+    template: _templates/record.ejs
+  - id: rec-career
+    contents: data/career.yml
+    sort: false
+    template: _templates/career.ejs
   - id: latest-talks
     contents: data/talks.yml
     max-items: 4
@@ -54,9 +62,9 @@ listing:
 
 <p class="kicker" style="margin-top:3rem">Record</p>
 
-## Papers and talks over time
+## Papers, talks and projects over time
 
-<p class="lede">One mark per publication (above the axis) and per talk (below), coloured by type. Hover or focus a mark for its title; click to open it.</p>
+<p class="lede">One mark per publication (above the axis) and per talk (below), coloured by type; projects as bars underneath. Hover or focus a mark for its title; click to open it. Talks before 2021 come from my slides and have no link.</p>
 
 ```{=html}
 <figure class="record"><svg id="record" role="img" aria-label="Timeline of publications and talks"></svg><div class="rec-legend" id="rec-legend"></div><figcaption id="rec-tip" aria-live="polite">&nbsp;</figcaption></figure>
@@ -66,6 +74,12 @@ listing:
 :::
 
 ::: {#rec-talks}
+:::
+
+::: {#rec-archive}
+:::
+
+::: {#rec-career}
 :::
 
 <p class="kicker" style="margin-top:3rem">Coordination</p>

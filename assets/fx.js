@@ -34,37 +34,46 @@
     })();
   }
 
-  // Record: one mark per publication (stacked above the axis by year) and per talk (below).
+  // Record: one mark per publication (stacked above the axis by year), per talk (below), then one bar per project.
   const svg = document.getElementById("record");
   if (!svg) return;
-  const [pubs, talks] = [...document.querySelectorAll(".rec-data")].map(box => [...box.children].map(({ dataset: a }) => ({ t: a.t, v: a.v, y: a.y, d: a.d, c: a.c, u: a.u || null })));
+  const [pubs, ...talkLists] = [...document.querySelectorAll(".rec-data")].map(box => [...box.children].map(({ dataset: a }) => ({ t: a.t, v: a.v, y: a.y, d: a.d, c: a.c, u: a.u || null })));
+  const talks = talkLists.flat();  // public talks, then pre-2021 talks known only from local slides (no link)
   const TYPES = [["journal", "--pink"], ["conference", "--cyan"], ["book", "--orange"], ["thesis", "--purple"], ["patent", "--yellow"],
     ["preprint", "--fg"], ["dataset", "--green"], ["other", "--muted"], ["collaboration", "--muted"], ["talk", "--green"]];
   let color;
   const order = Object.fromEntries(TYPES.map(([k], i) => [k, i]));
-  const yearOf = it => it.y ? +it.y : +it.d.slice(0, 4);
+  const yearOf = it => +(it.y || it.d.slice(0, 4));
+  const projects = [...document.querySelector(".rec-career").children].map(({ dataset: a }) => ({ t: a.t, r: a.r, from: +a.from, to: a.to ? +a.to : null }));
+  projects.forEach((p, i) => p.f = document.querySelector(".rec-career").children[i].dataset.f);
+  const today = new Date(), now = today.getFullYear() + today.getMonth() / 12;
+  const FIELDS = [["cosmology", "--purple"], ["accelerators", "--cyan"], ["ai", "--orange"]];
   const all = [...pubs, ...talks];
-  const y0 = Math.min(...all.map(yearOf)), y1 = Math.max(...all.map(yearOf)) + 1;
+  const y0 = Math.min(...all.map(yearOf), ...projects.map(p => p.from)), y1 = Math.max(...all.map(yearOf), ...projects.map(p => p.to || 0)) + 1;
   const tip = document.getElementById("rec-tip"), NS = "http://www.w3.org/2000/svg";
   const show = it => { tip.textContent = `${it.t} · ${it.v}${it.v ? ", " : ""}${it.d || it.y}`; };
+  const showP = p => { tip.textContent = `${p.t}${p.r ? " · " + p.r : ""} · ${p.from} to ${p.to || "now"}`; };
 
   const present = new Set(all.map(it => it.c)), legend = document.getElementById("rec-legend");
   const draw = () => {
     const css = getComputedStyle(document.body);
     color = Object.fromEntries(TYPES.map(([k, n]) => [k, css.getPropertyValue(n).trim()]));
-    legend.innerHTML = TYPES.filter(([k]) => present.has(k)).map(([k]) => `<span><i class="${k}" style="--c:${color[k]}"></i>${k}</span>`).join("");
+    const fcol = Object.fromEntries(FIELDS.map(([k, n]) => [k, css.getPropertyValue(n).trim()]));
+    legend.innerHTML = TYPES.filter(([k]) => present.has(k)).map(([k]) => `<span><i class="${k}" style="--c:${color[k]}"></i>${k}</span>`).join("")
+      + FIELDS.map(([k]) => `<span><i class="bar" style="--c:${fcol[k]}"></i>${k === "ai" ? "AI and coordination" : k} projects</span>`).join("");
     svg.replaceChildren();
     const W = svg.clientWidth, R = W < 600 ? 3 : 4.5, STEP = 2 * R + 2;
     const stackUp = {}, stackDown = {};
     pubs.forEach(p => stackUp[yearOf(p)] = (stackUp[yearOf(p)] || 0) + 1);
     talks.forEach(t => stackDown[yearOf(t)] = (stackDown[yearOf(t)] || 0) + 1);
-    const up = Math.max(...Object.values(stackUp)) * STEP + 10, down = Math.max(0, ...Object.values(stackDown)) * STEP + 30;
+    const BAR = W < 600 ? 13 : 16, talksDown = Math.max(0, ...Object.values(stackDown)) * STEP + 16;
+    const up = Math.max(...Object.values(stackUp)) * STEP + 10, down = talksDown + projects.length * BAR + 28;
     const H = up + down, AX = up, X = y => 10 + (y - y0) / (y1 - y0) * (W - 20);
     svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.style.height = H + "px";
     const add = (tag, a, parent = svg) => { const n = document.createElementNS(NS, tag); for (const k in a) n.setAttribute(k, a[k]); parent.appendChild(n); return n; };
     for (let y = y0; y <= y1; y++) {
       add("line", { x1: X(y), x2: X(y), y1: 0, y2: H - 18, class: "grid" });
-      if ((y - y0) % (W < 600 ? 4 : 2) === 0) add("text", { x: X(y) + 3, y: H - 4, class: "yr" }).textContent = y;
+      if ((y - y0) % (W < 600 ? 4 : 2) === 0 && X(y) + 34 < W) add("text", { x: X(y) + 3, y: H - 4, class: "yr" }).textContent = y;
     }
     add("line", { x1: 0, x2: W, y1: AX, y2: AX, class: "axis" });
     const mark = (it, cx, cy, i) => {
@@ -80,9 +89,18 @@
       const y = yearOf(p), k = filled["u" + y] = (filled["u" + y] || 0) + 1;
       mark(p, X(y + .5), AX - k * STEP + R - 2, i);
     });
-    [...talks].sort((a, b) => a.d.localeCompare(b.d)).forEach((t, i) => {
+    [...talks].sort((a, b) => (a.d || a.y).localeCompare(b.d || b.y)).forEach((t, i) => {
       const y = yearOf(t), k = filled["d" + y] = (filled["d" + y] || 0) + 1;
       mark(t, X(y + .5), AX + k * STEP - R + 2, pubs.length + i);
+    });
+    projects.forEach((p, i) => {
+      const x0 = X(p.from), x1 = X(p.to ? p.to + 1 : now), y = AX + talksDown + i * BAR, right = x1 + 6 < W - 160;
+      const g = add("g", { tabindex: 0, class: "pj" });
+      add("title", {}, g).textContent = p.t;
+      add("rect", { x: x0, y, width: Math.max(4, x1 - x0), height: BAR - 5, rx: 3, fill: fcol[p.f], class: "mk" }, g);
+      if (!p.to) add("rect", { x: x1 - 2, y, width: 4, height: BAR - 5, fill: fcol[p.f], opacity: .4 }, g);
+      add("text", { x: right ? x1 + 6 : x0 - 6, y: y + BAR - 7, "text-anchor": right ? "start" : "end", class: "pl" }, g).textContent = p.t;
+      g.addEventListener("mouseenter", () => showP(p)); g.addEventListener("focus", () => showP(p));
     });
   };
   new MutationObserver(() => setTimeout(draw, 60)).observe(document.body, { attributes: true, attributeFilter: ["class"] });
