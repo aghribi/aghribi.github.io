@@ -1,4 +1,12 @@
 /*-- scss:defaults --*/
-// Navbar in the page colours (cosmo body). Quarto draws the theme toggle icon with $navbar-fg.
-$navbar-bg: #fff;
-$navbar-fg: #343a40;
+// Monokai accents on a warm paper background, darkened for AA contrast.
+$body-bg: #fbfaf5;
+$body-color: #272822;
+$primary: #c2185b;
+$link-color: #0a6d8c;
+$navbar-bg: #fbfaf5;
+$navbar-fg: #272822;
+$footer-bg: #fbfaf5;
+$mk-pink: #c2185b; $mk-green: #4d7c0f; $mk-cyan: #0a6d8c; $mk-orange: #b45309; $mk-purple: #6d28d9; $mk-yellow: #8a6d00;
+$mk-muted: #5c5a4d;
+$mk-on-primary: #ffffff;

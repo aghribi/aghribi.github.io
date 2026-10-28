@@ -23,7 +23,8 @@ listing:
 
 ```{=html}
 <section class="hero">
-  <p class="kicker">Accelerator physics · Machine learning</p>
+  <div>
+  <p class="kicker">accelerator physics + machine learning<span class="caret" aria-hidden="true"></span></p>
   <h1>Adnan Ghribi</h1>
   <p class="role">Accelerator physicist, GANIL (CNRS) · Visiting scientist, CERN</p>
   <p class="bio">I work on the physics of particle accelerators and on the AI that helps design and run them.
@@ -35,6 +36,11 @@ listing:
     <a class="btn-pill" href="https://orcid.org/0000-0001-9634-4526">ORCID</a>
     <a class="btn-pill" href="https://inspirehep.net/authors/1245936">INSPIRE</a>
   </div>
+  </div>
+  <figure class="beam">
+    <canvas id="beam" aria-hidden="true"></canvas>
+    <figcaption>Bunches in a storage ring, betatron oscillations with damping. Click to inject a bunch.</figcaption>
+  </figure>
 </section>
 ```
 

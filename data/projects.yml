@@ -1,6 +1,7 @@
 # Project cards. Hand-written; every link must resolve.
 # featured: lead = home page coordination row, work = home page selected projects.
 - title: TwinRISE
+  image: assets/projects/twinrise.svg
   role: Coordinator
   summary: European reference framework for trusted AI-generated digital twins across research, healthcare and energy infrastructures. Distributed, AI-native digital twin engine.
   categories: [Coordination]
@@ -12,6 +13,7 @@
     - {label: CORDIS, url: "https://cordis.europa.eu/project/id/101287548"}
 
 - title: iRIS, work package GreenBeam
+  image: assets/projects/iris.svg
   role: Work package leader
   summary: AI methods to cut the energy and resource use of particle accelerators. Surrogate models from operational beam data, embedded in design and optimisation tools, and audits of hidden energy losses. With CERN, GSI, Heriot-Watt and Liverpool.
   categories: [Coordination]
@@ -24,6 +26,7 @@
     - {label: Kick-off at FCC Week 2026, url: "https://indico.cern.ch/event/1552126/contributions/7119541/"}
 
 - title: FCC-ee high energy booster
+  image: assets/projects/fcc-ee.svg
   role: In charge of collective effects
   summary: Collective effects in the 100 km booster ring of the Future Circular Collider. Impedance model, intrabeam scattering, single- and multi-bunch instabilities, RF budget. Xsuite and PyHEADTAIL on HPC.
   categories: [Research]
@@ -106,6 +109,7 @@
     - {label: TIARA 2024 talk, url: "https://indico.cern.ch/event/1385973/contributions/5826338/"}
 
 - title: ARTIFACT-France and MLAcc
+  image: assets/projects/artifact-france.svg
   role: Coordinator
   summary: French branch of ARTIFACT (formerly M4CAST), grown from the GRAAL collaboration, and the CNRS master project MLAcc. Monthly seminars and yearly workshops across most French accelerator labs.
   categories: [Coordination]
@@ -126,6 +130,7 @@
     - {label: Indico, url: "https://indico.cern.ch/event/1587419/contributions/6995110/"}
 
 - title: AISSAI Accelerator Hackathon 2026
+  image: assets/projects/hackathon.svg
   role: Organiser, mentor and lecturer
   summary: One-week hackathon on AI for particle accelerators in Normandy, 11 to 16 October 2026. 29 participants, three challenges on cases from ESS, STFC, CERN and PALLAS.
   categories: [Teaching]
@@ -140,6 +145,7 @@
     - {label: Pages, url: "https://aghribi.github.io/artifact-hackathon-2026/"}
 
 - title: SPIRAL2 linac cryogenics
+  image: assets/projects/spiral2.svg
   summary: Cryogenic commissioning and operation of the SPIRAL2 superconducting linac, then a neural-network model of its dynamic heat load.
   categories: [Research]
   status: Completed
@@ -150,6 +156,7 @@
     - {label: Heat-load dataset, url: "https://doi.org/10.5281/zenodo.17524143"}
 
 - title: CMB instrumentation
+  image: assets/projects/cmb.svg
   summary: Superconducting millimetre-wave components and bolometric interferometry for cosmic microwave background polarisation. QUBIC and POLARBEAR.
   categories: [Research]
   status: Completed
