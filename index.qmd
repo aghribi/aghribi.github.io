@@ -22,7 +22,9 @@ listing:
 ---
 
 ```{=html}
-<section class="hero">
+<section class="hero editor">
+  <div class="tabs" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="tab on">about.md</span><span class="tab">phase_space.js</span></div>
+  <div class="pane">
   <div>
   <p class="kicker">accelerator physics + machine learning<span class="caret" aria-hidden="true"></span></p>
   <h1>Adnan Ghribi</h1>
@@ -39,8 +41,9 @@ listing:
   </div>
   <figure class="beam">
     <canvas id="beam" aria-hidden="true"></canvas>
-    <figcaption>Bunches in a storage ring, betatron oscillations with damping. Click to inject a bunch.</figcaption>
+    <figcaption>Longitudinal phase space in an RF bucket (pendulum model, normalised units). Dashed: separatrix. Click to inject a bunch and watch it filament.</figcaption>
   </figure>
+  </div>
 </section>
 ```
 
