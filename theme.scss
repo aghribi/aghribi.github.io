@@ -7,8 +7,7 @@ $link-decoration: none;
 
 /*-- scss:rules --*/
 :root { --accent: #{$primary}; --muted: #{rgba($body-color, .62)}; --line: #{rgba($body-color, .12)}; --soft: #{rgba($body-color, .04)}; }
-.navbar { background: $body-bg !important; border-bottom: 1px solid var(--line); }
-.navbar .nav-link, .navbar-brand, .navbar .navbar-title { color: $body-color !important; }
+.navbar { border-bottom: 1px solid var(--line); }
 .navbar-brand .navbar-title { font-weight: 700; letter-spacing: -.01em; }
 h1, h2, h3 { letter-spacing: -.02em; font-weight: 700; }
 h2 { border-bottom: none !important; margin-top: 3rem; }

@@ -32,7 +32,7 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, theme.scss]
-      dark: [darkly, theme.scss]
+      light: [cosmo, theme.scss, light.scss]
+      dark: [darkly, theme.scss, dark.scss]
     toc: false
     anchor-sections: false

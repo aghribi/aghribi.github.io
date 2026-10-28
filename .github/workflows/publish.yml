@@ -19,6 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.7.31
       - run: quarto render
       - uses: actions/upload-pages-artifact@v3
         with:
