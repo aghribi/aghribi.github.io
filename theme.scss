@@ -141,8 +141,4 @@ main p a:hover, .entries a:hover, .card-p .links a:hover { text-decoration: unde
 .rec-legend i { display: inline-block; width: .65rem; height: .65rem; border-radius: 50%; margin-right: .35rem; background: var(--c); }
 .rec-legend i.talk { background: none; border: 2px solid var(--c); }
 .rec-legend i.collaboration { opacity: .5; }
-.rec-legend i.bar { border-radius: 2px; width: 1rem; height: .5rem; }
-.record .pl { fill: var(--muted); font: 11px $font-family-monospace; }
-.record .pj:focus { outline: none; }
-.record .pj:hover .pl, .record .pj:focus .pl { fill: var(--fg); }
 .record figcaption { font-size: .9rem; margin-top: .4rem; min-height: 1.5em; }

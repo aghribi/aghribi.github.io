@@ -161,3 +161,83 @@
   links:
     - {label: PhD thesis, url: "https://theses.fr/2009PA077221"}
     - {label: Papers, url: "https://inspirehep.net/authors/1245936"}
+
+- title: QUBIC
+  role: Cryogenic test benches, then detection chain integration
+  summary: Bolometric interferometer for the B-mode polarisation of the cosmic microwave background.
+  categories: [Research]
+  status: Completed
+  period: 2009 to 2014
+  tags: [cosmology, bolometric interferometry]
+  links:
+    - {label: APPEC, url: "https://www.appec.org/news/qubic-a-qu-bolometric-interferometer-for-cosmology"}
+
+- title: POLARBEAR
+  role: Detector fabrication, first-light deployment
+  summary: Ground-based CMB polarisation experiment (NSF). Clean-room fabrication of the detectors and deployment of the instrument on the Atacama plateau.
+  categories: [Research]
+  status: Completed
+  period: 2010 to 2012
+  tags: [cosmology, superconducting detectors, UC Berkeley]
+  links:
+    - {label: LAMBDA, url: "https://lambda.gsfc.nasa.gov/product/polarbear/"}
+
+- title: POLARBEAR-2, Simons Array and GroundBIRD
+  summary: Ground-based CMB polarisation experiments that followed POLARBEAR.
+  categories: [Research]
+  status: Completed
+  period: 2010 to 2012
+  tags: [cosmology, UC Berkeley]
+
+- title: LiteBIRD
+  summary: Space mission for CMB polarisation (JAXA, NASA). Polarisation modulators.
+  categories: [Research]
+  status: Completed
+  period: 2010 to 2012
+  tags: [cosmology, space mission, UC Berkeley]
+  links:
+    - {label: JAXA, url: "https://www.isas.jaxa.jp/en/missions/spacecraft/future/litebird.html"}
+
+- title: Cryogenic multichroic detectors (NASA)
+  summary: NASA R&D programme on cryogenic multichroic detectors for CMB polarisation.
+  categories: [Research]
+  status: Completed
+  period: 2010 to 2012
+  tags: [superconducting detectors, R&D, UC Berkeley]
+
+- title: CORE+ and PRISM
+  summary: Preparation of ESA space mission proposals for CMB polarisation.
+  categories: [Research]
+  status: Completed
+  period: 2012 to 2014
+  tags: [cosmology, space mission, ESA]
+
+- title: ESA ITT AO/1-7136/12/NL/MH
+  role: Work package on detector coupling techniques
+  summary: ESA R&D contract on detector coupling techniques for future space instruments.
+  categories: [Research]
+  status: Completed
+  period: 2012 to 2014
+  tags: [R&D, ESA]
+
+- title: CNES R&D, DCMB, BSD and BSD-Défi
+  summary: CNES R&D programmes on detection chains for CMB polarisation.
+  categories: [Research]
+  status: Completed
+  period: 2009 to 2014
+  tags: [R&D, CNES]
+
+- title: COSMOS, COS2 and DEFI
+  summary: ANR (COSMOS, COS2) and CNRS (DEFI) R&D programmes for cosmology instrumentation.
+  categories: [Research]
+  status: Completed
+  period: 2012 to 2014
+  tags: [R&D, ANR, CNRS]
+
+- title: GRAAL
+  role: Scientific coordinator
+  summary: CEA/CNRS collaboration between GANIL and CEA SBT on accelerator cryogenics.
+  categories: [Research]
+  status: Completed
+  period: 2016 to 2019
+  tags: [cryogenics, CEA, CNRS]
