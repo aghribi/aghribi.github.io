@@ -91,8 +91,8 @@ Seven axes, each feeding European projects.
     <span class="chip">CMB polarisation</span><span class="chip">bolometric interferometry</span><span class="chip">superconducting detectors</span><span class="chip">mm-wave components</span></div></div>
   <div><h3>Machine learning</h3><div class="chips">
     <span class="chip">anomaly detection</span><span class="chip">autoencoders</span><span class="chip">explainability</span><span class="chip">Bayesian optimisation</span><span class="chip">surrogate models</span><span class="chip">digital twins</span><span class="chip">LLM tooling</span></div></div>
-  <div><h3>Engineering</h3><div class="chips">
-    <span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">PyPI packages</span><span class="chip">web apps</span><span class="chip">FAIR data</span><span class="chip">static sites</span></div></div>
+  <div><h3>Scientific computing</h3><div class="chips">
+    <span class="chip">Python</span><span class="chip">Xsuite</span><span class="chip">PyHEADTAIL</span><span class="chip">HPC</span><span class="chip">FAIR data</span></div></div>
 </div>
 ```
 
