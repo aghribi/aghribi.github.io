@@ -38,10 +38,9 @@
   const svg = document.getElementById("record");
   if (!svg) return;
   const [pubs, talks] = [...document.querySelectorAll(".rec-data")].map(box => [...box.children].map(({ dataset: a }) => ({ t: a.t, v: a.v, y: a.y, d: a.d, c: a.c, u: a.u || null })));
-  const css = getComputedStyle(document.documentElement), v = n => css.getPropertyValue(n).trim();
   const TYPES = [["journal", "--pink"], ["conference", "--cyan"], ["book", "--orange"], ["thesis", "--purple"], ["patent", "--yellow"],
     ["preprint", "--fg"], ["dataset", "--green"], ["other", "--muted"], ["collaboration", "--muted"], ["talk", "--green"]];
-  const color = Object.fromEntries(TYPES.map(([k, n]) => [k, v(n)]));
+  let color;
   const order = Object.fromEntries(TYPES.map(([k], i) => [k, i]));
   const yearOf = it => it.y ? +it.y : +it.d.slice(0, 4);
   const all = [...pubs, ...talks];
@@ -49,7 +48,11 @@
   const tip = document.getElementById("rec-tip"), NS = "http://www.w3.org/2000/svg";
   const show = it => { tip.textContent = `${it.t} · ${it.v}${it.v ? ", " : ""}${it.d || it.y}`; };
 
+  const present = new Set(all.map(it => it.c)), legend = document.getElementById("rec-legend");
   const draw = () => {
+    const css = getComputedStyle(document.body);
+    color = Object.fromEntries(TYPES.map(([k, n]) => [k, css.getPropertyValue(n).trim()]));
+    legend.innerHTML = TYPES.filter(([k]) => present.has(k)).map(([k]) => `<span><i class="${k}" style="--c:${color[k]}"></i>${k}</span>`).join("");
     svg.replaceChildren();
     const W = svg.clientWidth, R = W < 600 ? 3 : 4.5, STEP = 2 * R + 2;
     const stackUp = {}, stackDown = {};
@@ -82,9 +85,7 @@
       mark(t, X(y + .5), AX + k * STEP - R + 2, pubs.length + i);
     });
   };
-  const present = new Set(all.map(it => it.c));
-  document.getElementById("rec-legend").innerHTML = TYPES.filter(([k]) => present.has(k))
-    .map(([k]) => `<span><i class="${k}" style="--c:${color[k]}"></i>${k}</span>`).join("");
+  new MutationObserver(() => setTimeout(draw, 60)).observe(document.body, { attributes: true, attributeFilter: ["class"] });
   let lastW = 0;
   new ResizeObserver(() => { if (svg.clientWidth !== lastW) { lastW = svg.clientWidth; draw(); } }).observe(svg.parentElement);
 })();
