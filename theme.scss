@@ -51,6 +51,7 @@ main p a:hover, .entries a:hover, .card-p .links a:hover { text-decoration: unde
 .skills > div:nth-child(1) { --c: var(--pink); }
 .skills > div:nth-child(2) { --c: var(--green); }
 .skills > div:nth-child(3) { --c: var(--cyan); }
+.skills > div:nth-child(4) { --c: var(--orange); }
 .skills h3 { font-size: 1rem; margin: 0 0 .7rem; color: var(--c); }
 .chips { display: flex; flex-wrap: wrap; gap: .4rem; }
 .chip { font-size: .8rem; padding: .2rem .65rem; border-radius: 999px; background: var(--soft); border: 1px solid var(--line); color: var(--muted); }
