@@ -1,13 +1,11 @@
-# Inputs for scripts/data.py. Local paths are read on the owner's laptop only.
+# Inputs for scripts/data.py. Local folders (bib_dir, presentations_dir) go in config.local.yml, not tracked.
 display_name: A. Ghribi
 surname: Ghribi
 orcid: 0000-0001-9634-4526
 inspire_bai: A.Ghribi.1
 github: aghribi
 indico: https://indico.cern.ch
-
 bib_skip: [seminaire, conf, poster]   # talks and posters, not publications
-
 max_authors: 6
 collaboration_min_authors: 30          # above this, a paper is listed under collaboration papers
 publications_exclude:                  # DOI or INSPIRE URL

@@ -26,6 +26,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 CONFIG = yaml.safe_load((DATA / "config.yml").read_text())
+CONFIG |= yaml.safe_load((DATA / "config.local.yml").read_text())
 
 
 def get(url, accept="application/json"):
