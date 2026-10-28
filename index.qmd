@@ -83,7 +83,7 @@ Seven axes, each feeding European projects.
   <div><h3>Machine learning</h3><div class="chips">
     <span class="chip">anomaly detection</span><span class="chip">autoencoders</span><span class="chip">explainability</span><span class="chip">Bayesian optimisation</span><span class="chip">surrogate models</span><span class="chip">digital twins</span><span class="chip">LLM tooling</span></div></div>
   <div><h3>Scientific computing</h3><div class="chips">
-    <span class="chip">Python</span><span class="chip">Xsuite</span><span class="chip">PyHEADTAIL</span><span class="chip">HPC</span><span class="chip">FAIR data</span></div></div>
+    <span class="chip">Python</span><span class="chip">Xsuite</span><span class="chip">PyHEADTAIL</span><span class="chip">HPC</span><span class="chip">FAIR data</span><span class="chip">PyPI packages</span></div></div>
 </div>
 ```
 
