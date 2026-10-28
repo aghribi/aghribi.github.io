@@ -1,7 +1,7 @@
 # aghribi.github.io
 
 - Type: personal website (GitHub user site)
-- Status: local preview, not published (2026-10-27)
+- Status: published at https://aghribi.github.io (GitHub Pages, deployed by Actions on push to main)
 - Started: 2026-10-27
 - Purpose: public page for research, publications, talks, teaching, software and side projects.
 

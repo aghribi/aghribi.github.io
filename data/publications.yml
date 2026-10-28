@@ -36,8 +36,8 @@
   category: conference
   collaboration: null
   doi: 10.18429/jacow-srf2025-tup68
-  arxiv: '2510.13421'
-  inspire: https://inspirehep.net/literature/3070080
+  arxiv: null
+  inspire: null
   url: null
   confirmed_by: DataCite
 - title: 'Editorial: Artificial Intelligence for Particle Accelerators'
@@ -146,6 +146,27 @@
   doi: 10.1103/82xr-d9gc
   arxiv: '2502.01196'
   inspire: https://inspirehep.net/literature/2874841
+  url: null
+  confirmed_by: INSPIRE
+- title: Development of fault identification pipeline for SPIRAL2 LLRF data
+  authors:
+  - name: Charly Lassalle
+    me: false
+  - name: Patrick Bonnay
+    me: false
+  - name: Frédéric Bouly
+    me: false
+  - name: Marco Di Giacomo
+    me: false
+  - name: Adnan Ghribi
+    me: true
+  venue: arXiv:2510.13421
+  year: 2025
+  category: conference
+  collaboration: null
+  doi: null
+  arxiv: '2510.13421'
+  inspire: https://inspirehep.net/literature/3070080
   url: null
   confirmed_by: INSPIRE
 - title: Emittance tuning of the FCC-ee High Energy Booster ring
@@ -751,6 +772,27 @@
   inspire: https://inspirehep.net/literature/1627060
   url: null
   confirmed_by: INSPIRE
+- title: QUBIC - the Q&U Bolometric Interferometer for Cosmology
+  authors:
+  - name: Aniello Mennella
+    me: false
+  - name: P.A.R. Ade
+    me: false
+  - name: J. Aumont
+    me: false
+  - name: et al.
+    me: false
+  - name: incl. A. Ghribi
+    me: true
+  venue: PoS EPS-HEP2017, 044
+  year: 2017
+  category: collaboration
+  collaboration: null
+  doi: 10.22323/1.314.0044
+  arxiv: '1801.03730'
+  inspire: https://inspirehep.net/literature/1647616
+  url: null
+  confirmed_by: INSPIRE
 - title: Spiral 2 Cryogenic System for The Superconducting LINAC
   authors:
   - name: A. Ghribi
@@ -1228,7 +1270,7 @@
   category: collaboration
   collaboration: null
   doi: 10.1007/s10909-012-0522-x
-  arxiv: '1010.0645'
+  arxiv: null
   inspire: https://inspirehep.net/literature/1605025
   url: null
   confirmed_by: INSPIRE
@@ -1325,6 +1367,27 @@
   doi: 10.5772/919
   arxiv: null
   inspire: https://inspirehep.net/literature/1337912
+  url: null
+  confirmed_by: INSPIRE
+- title: 'QUBIC: The QU Bolometric Interferometer for Cosmology'
+  authors:
+  - name: E. Battistelli
+    me: false
+  - name: A. Bau
+    me: false
+  - name: D. Bennett
+    me: false
+  - name: et al.
+    me: false
+  - name: incl. A. Ghribi
+    me: true
+  venue: Astropart.Phys. 34, 705
+  year: 2011
+  category: collaboration
+  collaboration: QUBIC
+  doi: 10.1016/j.astropartphys.2011.01.012
+  arxiv: '1010.0645'
+  inspire: https://inspirehep.net/literature/871676
   url: null
   confirmed_by: INSPIRE
 - title: 'Composants millimétriques supra-conducteurs: pour la mesure de la polarisation du fond diffus cosmologique'

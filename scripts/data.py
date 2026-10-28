@@ -266,16 +266,22 @@ def publications():
             review.append({"doi": r["doi"], "title": r["title"], "reason": "DOI not registered yet; listed without DOI link"})
             r["doi"] = None
 
-    # One entry per title (repository mirrors, preprints, DOI-less copies). Keep the published record.
-    rank = lambda r: (r["type"] == "preprint", not r.get("doi"),
-                      {"INSPIRE": 0, "Crossref": 1, "DataCite": 2}.get(r["confirmed_by"], 3))
-    best = {}
-    for r in sorted(records, key=rank):
-        twin = best.setdefault(norm_title(r["title"]), r)
-        if twin is not r:
+    # Preprints, DOI-less copies and DataCite repository mirrors fold into the published record with the
+    # same title and the nearest year. Distinct papers can share a title (QUBIC 2011, 2012, 2017), hence the year.
+    copy = lambda r: r["type"] == "preprint" or not r.get("doi") or (r["confirmed_by"] == "DataCite" and r["type"] != "dataset")
+    published = {}
+    for r in records:
+        if not copy(r):
+            published.setdefault(norm_title(r["title"]), []).append(r)
+    kept = []
+    for r in records:
+        twins = [t for t in published.get(norm_title(r["title"]), []) if abs((t["year"] or 0) - int(r["year"] or 0)) <= 2]
+        if copy(r) and twins:
+            twin = min(twins, key=lambda t: abs((t["year"] or 0) - int(r["year"] or 0)))
             twin["arxiv"] = twin.get("arxiv") or r.get("arxiv")
             twin["inspire"] = twin.get("inspire") or r.get("inspire")
-    kept = best.values()
+        else:
+            kept.append(r)
 
     excluded = set(CONFIG["publications_exclude"])
     out = []
