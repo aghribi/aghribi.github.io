@@ -6,10 +6,14 @@
 - {title: "POLARBEAR", role: "detector fabrication, first-light deployment in the Atacama", from: 2010, to: 2012, field: cosmology}
 - {title: "LiteBIRD (JAXA, NASA)", from: 2010, to: 2012, field: cosmology}
 - {title: "Cryogenic multichroic detectors (NASA)", from: 2010, to: 2012, field: cosmology}
+- {title: "POLARBEAR-2 and Simons Array", from: 2010, to: 2012, field: cosmology}
+- {title: "GroundBIRD", from: 2010, to: 2012, field: cosmology}
 - {title: "CORE+ and PRISM (ESA mission proposals)", from: 2012, to: 2014, field: cosmology}
 - {title: "ESA ITT AO/1-7136/12/NL/MH", role: "detectors coupling techniques", from: 2012, to: 2014, field: cosmology}
 - {title: "BSD-Défi (CNES)", from: 2012, to: 2014, field: cosmology}
+- {title: "COSMOS and COS2 (ANR), DEFI (CNRS)", from: 2012, to: 2014, field: cosmology}
 - {title: "SPIRAL2 cryogenics", role: "cryoplant, then cryogenic commissioning of the linac", from: 2014, to: 2023, field: accelerators}
+- {title: "GRAAL (CEA/CNRS)", role: "scientific coordinator", from: 2016, to: 2019, field: accelerators}
 - {title: "M4CAST, then ARTIFACT-France", role: "coordinator", from: 2022, field: ai}
 - {title: "FCC-ee high energy booster", role: "collective effects", from: 2023, field: accelerators}
 - {title: "MLAcc (CNRS master project)", role: "coordinator", from: 2023, field: ai}
