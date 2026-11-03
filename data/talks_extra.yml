@@ -49,3 +49,19 @@
   event: MaLAPA 2026
   location: Himeji, Japan
   url: https://github.com/tiamiceli/summary-malapa-2026   # the Indico page needs a login; this public export lists the talk
+- date: 2023-12-15
+  title: Unleashing the power of digital transformation in accelerator physics
+  event: GANIL seminar
+  url: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/artifact/20231215_ganil/
+- date: 2024-04-17
+  title: Unleashing the power of digital transformation in accelerator sciences and technologies
+  event: NuPECC
+  url: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/artifact/20240417_nupecc/
+- date: 2025-06-13
+  title: AI for Accelerators Strategic Preparation
+  event: LabEx
+  url: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/ai4acc/20250613_labex/
+- date: 2025-11-15
+  title: Keynote
+  event: Journée des masters
+  url: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/ai4acc/20251115_mastersdays/

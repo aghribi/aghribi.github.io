@@ -331,8 +331,13 @@ def talks():
             out.append({**x, "date": str(x["date"]), "confirmed_by": x["url"]})
         else:
             review.append({**x, "reason": "URL does not resolve"})
+    slides = yaml.safe_load((DATA / "talks_slides.yml").read_text()) or {}
+    for t in out:
+        if t["url"] in slides:
+            t["slides"] = slides[t["url"]]
     today = datetime.date.today().isoformat()
-    out = sorted((t for t in out if t["date"] <= today), key=lambda t: t["date"], reverse=True)  # upcoming talks wait
+    # upcoming talks wait, unless their slides are already online
+    out = sorted((t for t in out if t["date"] <= today or t.get("slides")), key=lambda t: t["date"], reverse=True)
     dump("talks.yml", out)
 
     dated = {t["date"] for t in out}

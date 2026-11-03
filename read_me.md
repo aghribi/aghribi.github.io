@@ -13,6 +13,7 @@
 | `data/*.yml` | lists shown on the pages, built by `scripts/data.py` |
 | `data/config.yml` | identifiers (ORCID, INSPIRE, GitHub), local source paths, thresholds |
 | `data/*_extra.yml` | hand entries; each needs a public URL that resolves |
+| `data/talks_slides.yml` | slides URL per talk URL, shown as a link next to the talk |
 | `data/talks_exclude.yml` | Indico items that are meeting business, not talks |
 | `data/*_review.yml` | items no database confirmed; local only, git-ignored |
 | `_templates/` | listing templates |

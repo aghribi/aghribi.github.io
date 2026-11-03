@@ -6,7 +6,7 @@ listing:
   template: _templates/talks.ejs
 ---
 
-Talks with a public record.
+Talks with a public record. All slides online: [presentations](https://aghribi1-presentation-20230911-artifact.docs.cern.ch/).
 
 ::: {#talks}
 :::

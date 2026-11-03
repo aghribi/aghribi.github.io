@@ -1,3 +1,10 @@
+- date: '2026-11-04'
+  title: WP2 - GreenBeam
+  event: Start of the Action and Onboarding
+  location: CERN
+  url: https://indico.cern.ch/event/1716099/contributions/7219122/
+  confirmed_by: CERN Indico
+  slides: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/iris/20261104_start_of_action_wp2/
 - date: '2026-10-12'
   title: AI for particle accelerators introductory lecture
   event: AISSAI'26 Hackathon on AI for Particle Accelerators
@@ -16,6 +23,7 @@
   location: University of Helsinki
   url: https://indico.cern.ch/event/1552126/contributions/7130529/
   confirmed_by: CERN Indico
+  slides: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/fcc/2026_fcc_week_heb_overview/
 - date: '2026-06-09'
   title: Welcome and introduction to iRIS
   event: FCC Week 2026
@@ -34,12 +42,23 @@
   location: LPC Caen and GANIL
   url: https://indico.in2p3.fr/event/36597/contributions/163873/
   confirmed_by: https://indico.in2p3.fr/event/36597/contributions/163873/
+  slides: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/ai4acc/2025_towards_smarter_accelerators/
 - date: '2025-11-18'
   title: L'IA pour la conception et l'opération des accélérateurs de particules
   event: 2ndes Journées Online
   location: IJCLab, Orsay
   url: https://indico.ijclab.in2p3.fr/event/11845/contributions/39682/
   confirmed_by: https://indico.ijclab.in2p3.fr/event/11845/contributions/39682/
+- date: '2025-11-15'
+  title: Keynote
+  event: Journée des masters
+  url: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/ai4acc/20251115_mastersdays/
+  confirmed_by: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/ai4acc/20251115_mastersdays/
+- date: '2025-06-13'
+  title: AI for Accelerators Strategic Preparation
+  event: LabEx
+  url: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/ai4acc/20250613_labex/
+  confirmed_by: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/ai4acc/20250613_labex/
 - date: '2025-05-21'
   title: Updates on FCC-ee High Energy Booster collective effects studies
   event: FCC Week 2025
@@ -70,6 +89,11 @@
   location: The Westin St. Francis San Francisco on Union Square
   url: https://indico.cern.ch/event/1298458/contributions/5977866/
   confirmed_by: CERN Indico
+- date: '2024-04-17'
+  title: Unleashing the power of digital transformation in accelerator sciences and technologies
+  event: NuPECC
+  url: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/artifact/20240417_nupecc/
+  confirmed_by: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/artifact/20240417_nupecc/
 - date: '2024-03-05'
   title: Collective effects
   event: Booster parameter table
@@ -82,12 +106,18 @@
   location: CERN
   url: https://indico.cern.ch/event/1385973/contributions/5826338/
   confirmed_by: CERN Indico
+  slides: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/artifact/20240305_tiara/
 - date: '2024-02-02'
   title: Beam pipe constraints from collective effects
   event: 2nd FCC-ee Booster meeting
   location: null
   url: https://indico.cern.ch/event/1375185/contributions/5786718/
   confirmed_by: CERN Indico
+- date: '2023-12-15'
+  title: Unleashing the power of digital transformation in accelerator physics
+  event: GANIL seminar
+  url: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/artifact/20231215_ganil/
+  confirmed_by: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/artifact/20231215_ganil/
 - date: '2023-11-27'
   title: General project presentation
   event: ARTIFACT preparation workshop
@@ -112,6 +142,7 @@
   location: IFJ-PAN
   url: https://indico.cern.ch/event/1334859/contributions/5619328/
   confirmed_by: CERN Indico
+  slides: https://aghribi1-presentation-20230911-artifact.docs.cern.ch/artifact/20231107_tiara/
 - date: '2023-10-10'
   title: HE Project - ARTIFACT
   event: Industry in the Artifact project - meeting (FRANCE)
@@ -154,9 +185,3 @@
   location: Virtual Event
   url: https://indico.cern.ch/event/1060503/contributions/4751965/
   confirmed_by: CERN Indico
-- date: '2021-01-19'
-  title: In situ dynamic heat load measurements of the SPIRAL 2 LINAC superconducting cavities
-  event: TESLA Technology Collaboration meeting TTC 2021
-  location: Online
-  url: https://indico.desy.de/event/27572/contributions/94171/
-  confirmed_by: https://indico.desy.de/event/27572/contributions/94171/
