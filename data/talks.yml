@@ -185,3 +185,9 @@
   location: Virtual Event
   url: https://indico.cern.ch/event/1060503/contributions/4751965/
   confirmed_by: CERN Indico
+- date: '2021-01-19'
+  title: In situ dynamic heat load measurements of the SPIRAL 2 LINAC superconducting cavities
+  event: TESLA Technology Collaboration meeting TTC 2021
+  location: Online
+  url: https://indico.desy.de/event/27572/contributions/94171/
+  confirmed_by: https://indico.desy.de/event/27572/contributions/94171/
