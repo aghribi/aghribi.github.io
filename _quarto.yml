@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: _site
   render: ["*.qmd"]
-  resources: ["assets/**"]
+  resources: ["assets/**", "slides/**"]
 
 website:
   title: "Adnan Ghribi"
